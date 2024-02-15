@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.56c02df4.css",
+    "main.js": "/static/js/main.04a1adf7.js",
+    "static/media/testimonialbg.png": "/static/media/testimonialbg.893ea345e9a15733a8c6.png",
+    "static/media/hireme.png": "/static/media/hireme.0d5c6bb4f3ac71d0a73b.png",
+    "static/media/profile.png": "/static/media/profile.7592b1a27a3b172eae12.png",
+    "static/media/marketing.svg": "/static/media/marketing.f6a4944882a85e53dc62298973e453cc.svg",
+    "static/media/niresh.svg": "/static/media/niresh.d6987ea914a7f22005bd1d1e57e1dcf2.svg",
+    "index.html": "/index.html",
+    "main.56c02df4.css.map": "/static/css/main.56c02df4.css.map",
+    "main.04a1adf7.js.map": "/static/js/main.04a1adf7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56c02df4.css",
+    "static/js/main.04a1adf7.js"
+  ]
+}

@@ -2,10 +2,11 @@ import React from 'react';
 import Header from './Components/Header';
 import Skills from './Components/Skills';
 import Progress from './Components/Progress';
-import Portfolio from './Components/Portfolio';
+import PortfolioSection from './Components/PortfolioSection';
 import Testimonial from './Components/Testimonial';
 import Hireme from './Components/Hireme';
-import Blog from './Components/Blog';
+import BlogSection from './Components/BlogSection';
+import Getintouch from './Components/Getintouch';
 import Footer from './Components/Footer';
 import './App.css';
 
@@ -16,9 +17,10 @@ function App() {
       <Skills />
       <Progress />
       <Testimonial />
-      <Portfolio />
+      <PortfolioSection />
       <Hireme />
-      <Blog />
+      <BlogSection />
+      <Getintouch />
       <Footer />
     </div>
   );

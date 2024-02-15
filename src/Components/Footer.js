@@ -8,15 +8,10 @@ function Footer() {
     <section className="min-h-fit footer-section py-6 bg-dark_primary">
       <div className="container mx-auto">
       <footer className="p-3 text-center text-white">
-        <h6 class="mb-3 text-white">Niresh Shrestha</h6>
-        <ul class="flex flex-wrap justify-center">
-          <li class="dark:text-gray-400">
-            <a href="#">
-            <FontAwesomeIcon icon={['fab', 'apple']} />
-            </a></li>
-          <li class="dark:text-gray-400">16 oct, 2023</li>
+        <h6 className="mb-3 text-white">Niresh Shrestha</h6>
+        <ul className="flex flex-wrap justify-center">
           </ul>
-        <p> © All Reserved {currentYear}.</p>
+        <p> &copy; {currentYear}. All Rights Reserved.</p>
         <a href="#"><p>Privacy Policy</p></a>
         </footer>
         </div>
