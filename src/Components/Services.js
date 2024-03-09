@@ -1,24 +1,24 @@
 import React  from "react";
-import InnerHeader from "./Innerheader";
+import InnerHeaderStyle2 from "./InnerHeaderStyle2";
 import ServiceSectionOne from "./ServiceSectionOne";
 import ServiceList from "./ServiceList";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
 
 function Services (props) {
-  const pagetitle ="Services";
-  const breadcrumbText = "Providing services for over 12 Years Services";
-  const breadcrumbText2 = "What I offer";
+  const pagetitle ="My Services";
+  const breadcrumbText = "Providing services for over 12 Years";
+  const breadcrumbText1 = "Qualified & Experiened";
+  const word1 = "My"
+  const word2 = "Services"
   const typewriterStrings = [
-    "Web Development",
-    "frontend Development",
-    "Theme Development",
-    "Plugin Development",
-    "WooCommerce Development",
+    "Frontend Developer",
+    "WordPress Developer",
+    "Content Writer",
   ];
   return (
     <>
-    <InnerHeader Breadcrumbtext1={breadcrumbText} Breadcrumbtext2={breadcrumbText2} Typewriter={typewriterStrings} pagetitle={pagetitle}/>
+    <InnerHeaderStyle2 Breadcrumbtext1={breadcrumbText} Breadcrumbtext2={breadcrumbText1} Typewriter={typewriterStrings} pagetitle={pagetitle} Word1={word1} Word2={word2} />
     <ServiceSectionOne />
     <ServiceList />
     <FAQ />

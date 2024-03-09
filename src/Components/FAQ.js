@@ -41,14 +41,13 @@ function FAQ(props) {
           id="panel1bh-header"
         >
           <Typography sx={{ flexShrink: 0 }}>
-          01. How will the system operate?
+          01. How can I contact you for inquiries or collaborations?
           </Typography>
           
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
+          You can reach out to me through the contact form on the website. Simply navigate to the "Contact" page, fill out the form or you can call me in the given numbers with your details and message, and I'll get back to you as soon as possible.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -59,15 +58,13 @@ function FAQ(props) {
           id="panel2bh-header"
         >
           <Typography sx={{flexShrink: 0 }}>
-          02. What types of payments do you accept?
+          02. Do you offer web development services other than WordPress?
           </Typography>
           
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus,
-            varius pulvinar diam eros in elit. Pellentesque convallis laoreet
-            laoreet.
+          Yes, absolutely! While WordPress is my specialty, I also offer frontend development services using various technologies like HTML, CSS, and JavaScript. Whether it's building a custom website or enhancing an existing one, I'm here to help.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -78,14 +75,13 @@ function FAQ(props) {
           id="panel3bh-header"
         >
           <Typography sx={{ flexShrink: 0 }}>
-          03. Can you guarantee confidentiality?
+          03. Can I see examples of your previous work?
           </Typography>
          
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
-            amet egestas eros, vitae egestas augue. Duis vel est augue.
+          Of course! You can view my portfolio by clicking on the "Portfolio" section of the website. There, you'll find a collection of projects I've worked on, showcasing my skills and expertise in frontend development and WordPress customization.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -96,38 +92,53 @@ function FAQ(props) {
           id="panel4bh-header"
         >
           <Typography sx={{ flexShrink: 0 }}>
-          04. Can you guarantee confidentiality?
+          04. How long does it take for you to complete a website project?
           </Typography>
          
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
-            amet egestas eros, vitae egestas augue. Duis vel est augue.
+          The timeline for each project varies depending on its complexity and specific requirements. However, I always strive to deliver high-quality work in a timely manner. During our initial consultation, we can discuss your project's scope and timeline in detail to ensure expectations are aligned.
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')} className="mt-5 mb-5 accordion_item">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel5bh-content"
+          aria-controls="panel4bh-content"
           id="panel5bh-header"
         >
           <Typography sx={{ flexShrink: 0 }}>
-          05. Can you guarantee confidentiality?
+          05. Do you provide ongoing maintenance and support too?
           </Typography>
          
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
-            amet egestas eros, vitae egestas augue. Duis vel est augue.
+          Yes, I offer maintenance and support services to ensure your website remains up-to-date, secure, and performing optimally. Whether it's regular updates, troubleshooting issues, or implementing new features, you can count on me to provide ongoing assistance and support for your website.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')} className="mt-5 mb-5 accordion_item">
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel5bh-content"
+          id="panel6bh-header"
+        >
+          <Typography sx={{ flexShrink: 0 }}>
+          06. Can you guarantee confidentiality?
+          </Typography>
+         
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+           Yes of course I can guarantee confidentiality. Your personal details and the project  will be kept strictly confidential. If necessary We can do NDA contract too. Yes, we are committed to providing the  highest level of professionalism in all aspects of our work. All communications with clients are strictly confident.
           </Typography>
         </AccordionDetails>
       </Accordion>
       </div>
-      <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
-<img src={manwithtab} alt="" data-aos="fade-up"/>
+      <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 relative">
+<img src={manwithtab} alt="" data-aos="fade-up" className="faqimage"/>
       </div>
     </div>
         </div>

@@ -10,7 +10,7 @@ function ServiceSectionOne (props) {
         </div>
         <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
         <p>
-A strategic and tactical approach is essential for long-term goals, but what’s even more important is keeping deadlines and promises. Our work gets results and we never hide behind paperwork.</p>
+        I have been developing WordPress sites for almost 5+ years now and I can provide a list of many sites that will showcase my work. My goal is to deliver high-quality and user friendly websites that help small and medium-sized businesses get their business online and to make the online presence.</p>
         
         </div>
       

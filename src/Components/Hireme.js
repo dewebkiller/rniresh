@@ -1,4 +1,5 @@
 import hiremebg from "../images/hireme.png";
+import { Link } from "react-router-dom";
 
 export const Hireme = () => {
   return (
@@ -22,7 +23,7 @@ export const Hireme = () => {
     <div data-aos="fade-left" className="border-2 border-dark_primary max-w-sm p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem] aos-init aos-animate">
       <p className="leading-7">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean</p>
       <br/>
-      <button className="btn bg-dark_primary text-white bg-sky-500/100">Hire Me</button>
+      <button className="btn bg-dark_primary text-white bg-sky-500/100"><Link to={'/Contact'}>Hire Me</Link></button>
       </div>
     </div>
   </div>

@@ -37,8 +37,7 @@ function WorkProcess(props) {
                 <h6>01. Idea</h6>
 
                 <p>
-                  Nulla consequat massa quis enim. Donec pede justo, fringilla
-                  vel, aliquet nec, vulputate eget, arcu.
+                The inception of innovation, where imagination ignites the spark of possibility.
                 </p>
               </div>
             </div>
@@ -53,8 +52,7 @@ function WorkProcess(props) {
                 <h6>02. Design</h6>
 
                 <p>
-                  Nulla consequat massa quis enim. Donec pede justo, fringilla
-                  vel, aliquet nec, vulputate eget, arcu.
+                Transforming abstract concepts into tangible blueprints, where form and function converge.
                 </p>
               </div>
             </div>
@@ -69,8 +67,7 @@ function WorkProcess(props) {
                 <h6>03. Develop</h6>
 
                 <p>
-                  Nulla consequat massa quis enim. Donec pede justo, fringilla
-                  vel, aliquet nec, vulputate eget, arcu.
+                Breathing life into the design, coding the foundation upon which ideas materialize.
                 </p>
               </div>
             </div>
@@ -85,8 +82,7 @@ function WorkProcess(props) {
                 <h6>04. Test</h6>
 
                 <p>
-                  Nulla consequat massa quis enim. Donec pede justo, fringilla
-                  vel, aliquet nec, vulputate eget, arcu.
+                Ensuring resilience and functionality, meticulously examining every element for flawless execution.
                 </p>
               </div>
             </div>
@@ -101,8 +97,7 @@ function WorkProcess(props) {
                 <h6>05. Launch</h6>
 
                 <p>
-                  Nulla consequat massa quis enim. Donec pede justo, fringilla
-                  vel, aliquet nec, vulputate eget, arcu.
+                Unveiling the culmination of efforts to the world, marking the beginning of a new journey.
                 </p>
               </div>
             </div>

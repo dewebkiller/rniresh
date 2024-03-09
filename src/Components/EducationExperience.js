@@ -33,17 +33,15 @@ function EducationExperience(props) {
                       <div className="timeline__item__head mb-5">
                         <div className="timeline__item__icon"><FontAwesomeIcon icon={faStarOfLife} /></div>
                         <h6 className="timeline__item__title">
-                          UI/UX Designer
+                          Web Design
                         </h6>
                         <em className="timeline__item__subtitle text-sm mb-3">
-                          Google INC | New York (2016-2018)
+                          Arena Multimedia | Kathmandu
                         </em>
                       </div>
                       <div className="timeline__item__body">
                         <p className="imeline__item__description">
-                          Nulla consequat massa quis enim. Donec pede justo,
-                          fringilla vel, aliquet nec, vulputate eget, arcu. In
-                          enim justo.
+                          Learnt the professional Web design from the Experts.  Developed a website for an Small business.
                         </p>
                       </div>
                     </div>
@@ -53,17 +51,15 @@ function EducationExperience(props) {
                       <div className="timeline__item__head mb-5">
                         <div className="timeline__item__icon"><FontAwesomeIcon icon={faStarOfLife} /></div>
                         <h6 className="timeline__item__title">
-                          UI/UX Designer
+                          Graphic Design
                         </h6>
                         <em className="timeline__item__subtitle text-sm mb-3">
-                          Google INC | New York (2016-2018)
+                          Arena Multimedia | Kathmandu
                         </em>
                       </div>
                       <div className="timeline__item__body">
                         <p className="imeline__item__description">
-                          Nulla consequat massa quis enim. Donec pede justo,
-                          fringilla vel, aliquet nec, vulputate eget, arcu. In
-                          enim justo.
+                          Learnt the basic of graphic designing tools like photoshop, illustraor and made some designs for the assignment.
                         </p>
                       </div>
                     </div>
@@ -73,17 +69,15 @@ function EducationExperience(props) {
                       <div className="timeline__item__head mb-5">
                         <div className="timeline__item__icon"><FontAwesomeIcon icon={faStarOfLife} /></div>
                         <h6 className="timeline__item__title">
-                          UI/UX Designer
+                          Web Programing
                         </h6>
                         <em className="timeline__item__subtitle text-sm mb-3">
-                          Google INC | New York (2016-2018)
+                          IT Training in Nepal | Kathmandu
                         </em>
                       </div>
                       <div className="timeline__item__body">
                         <p className="imeline__item__description">
-                          Nulla consequat massa quis enim. Donec pede justo,
-                          fringilla vel, aliquet nec, vulputate eget, arcu. In
-                          enim justo.
+                          Learnt the php and myaql and built a real estate website as a  project.
                         </p>
                       </div>
                     </div>
@@ -93,17 +87,33 @@ function EducationExperience(props) {
                       <div className="timeline__item__head mb-5">
                         <div className="timeline__item__icon"><FontAwesomeIcon icon={faStarOfLife} /></div>
                         <h6 className="timeline__item__title">
-                          UI/UX Designer
+                          Digital Marketing
                         </h6>
                         <em className="timeline__item__subtitle text-sm mb-3">
-                          Google INC | New York (2016-2018)
+                          Half tone design | Kathmandu
                         </em>
                       </div>
                       <div className="timeline__item__body">
                         <p className="imeline__item__description">
-                          Nulla consequat massa quis enim. Donec pede justo,
-                          fringilla vel, aliquet nec, vulputate eget, arcu. In
-                          enim justo.
+                          Learnt  about SEO, Social Media marketting, Google Analytics and created a digital marketing portfolio.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="timeline__item" data-aos="fade-right">
+                      <div className="timeline__item__head mb-5">
+                        <div className="timeline__item__icon"><FontAwesomeIcon icon={faStarOfLife} /></div>
+                        <h6 className="timeline__item__title">
+                          WordPress Development
+                        </h6>
+                        <em className="timeline__item__subtitle text-sm mb-3">
+                          Online Courses | Internet
+                        </em>
+                      </div>
+                      <div className="timeline__item__body">
+                        <p className="imeline__item__description">
+                        Where knowledge meets convenience, and learning knows no bounds. Unlocking new skills from the comfort of your screen, empowering minds one click at a time.
                         </p>
                       </div>
                     </div>
@@ -122,17 +132,15 @@ function EducationExperience(props) {
                       <div className="timeline__item__head mb-5">
                         <div className="timeline__item__icon"><FontAwesomeIcon icon={faStarOfLife} /></div>
                         <h6 className="timeline__item__title">
-                          UI/UX Designer
+                        Web designer
                         </h6>
                         <em className="timeline__item__subtitle text-sm mb-3">
-                          Google INC | New York (2016-2018)
+                          OK Nepal INC | Katamndu (2010-2011)
                         </em>
                       </div>
                       <div className="timeline__item__body">
                         <p className="imeline__item__description">
-                          Nulla consequat massa quis enim. Donec pede justo,
-                          fringilla vel, aliquet nec, vulputate eget, arcu. In
-                          enim justo.
+                          Implemented what I learnt from the Arena Multimedia and gain some professional knowledge.
                         </p>
                       </div>
                     </div>
@@ -142,17 +150,15 @@ function EducationExperience(props) {
                       <div className="timeline__item__head mb-5">
                         <div className="timeline__item__icon"><FontAwesomeIcon icon={faStarOfLife} /></div>
                         <h6 className="timeline__item__title">
-                          UI/UX Designer
+                          Web Designer
                         </h6>
                         <em className="timeline__item__subtitle text-sm mb-3">
-                          Google INC | New York (2016-2018)
+                          CrossOver Nepal | Kupondole (2011-2017)
                         </em>
                       </div>
                       <div className="timeline__item__body">
                         <p className="imeline__item__description">
-                          Nulla consequat massa quis enim. Donec pede justo,
-                          fringilla vel, aliquet nec, vulputate eget, arcu. In
-                          enim justo.
+                          Started as a junior web designer and promoted upto project manager. Had a great experience over here.
                         </p>
                       </div>
                     </div>
@@ -162,17 +168,15 @@ function EducationExperience(props) {
                       <div className="timeline__item__head mb-5">
                         <div className="timeline__item__icon"><FontAwesomeIcon icon={faStarOfLife} /></div>
                         <h6 className="timeline__item__title">
-                          UI/UX Designer
+                          Sr. Web developer
                         </h6>
                         <em className="timeline__item__subtitle text-sm mb-3">
-                          Google INC | New York (2016-2018)
+                          8848 Webs | Jwagal (2017-2019)
                         </em>
                       </div>
                       <div className="timeline__item__body">
                         <p className="imeline__item__description">
-                          Nulla consequat massa quis enim. Donec pede justo,
-                          fringilla vel, aliquet nec, vulputate eget, arcu. In
-                          enim justo.
+                          Built some large scale ecommerce site and managed projects too and mentored the junior designers also.
                         </p>
                       </div>
                     </div>
@@ -182,17 +186,33 @@ function EducationExperience(props) {
                       <div className="timeline__item__head mb-5">
                         <div className="timeline__item__icon"><FontAwesomeIcon icon={faStarOfLife} /></div>
                         <h6 className="timeline__item__title">
-                          UI/UX Designer
+                        CTO and Project Manager
                         </h6>
                         <em className="timeline__item__subtitle text-sm mb-3">
-                          Google INC | New York (2016-2018)
+                        Murphys Technology | Sankhamul (2019-2021)
                         </em>
                       </div>
                       <div className="timeline__item__body">
                         <p className="imeline__item__description">
-                          Nulla consequat massa quis enim. Donec pede justo,
-                          fringilla vel, aliquet nec, vulputate eget, arcu. In
-                          enim justo.
+                        Handled the company’s online presence – regularly updated the company’s website and various social media accounts.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="timeline__item" data-aos="fade-left">
+                      <div className="timeline__item__head mb-5">
+                        <div className="timeline__item__icon"><FontAwesomeIcon icon={faStarOfLife} /></div>
+                        <h6 className="timeline__item__title">
+                        WordPress Developer
+                        </h6>
+                        <em className="timeline__item__subtitle text-sm mb-3">
+                        CodePixelz Media | Ekantakuna (2021-present)
+                        </em>
+                      </div>
+                      <div className="timeline__item__body">
+                        <p className="imeline__item__description">
+                        WordPress developer, Theme development and customization, FSE, Gutenberg, React, Frontend developer.
                         </p>
                       </div>
                     </div>

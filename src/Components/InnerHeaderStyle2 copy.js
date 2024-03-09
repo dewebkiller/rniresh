@@ -1,23 +1,12 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import dotimage from "../images/dots-5.png";
 import nireshlogo from "../images/niresh.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Breadcrumbtext1 from "./Breadcrumbtext1";
-import Breadcrumbtext2 from "./Breadcrumbtext2";
 import Typewriter from "typewriter-effect";
-import Word1 from "./Firstword";
-import  Word2 from "./Secondword";
 import Navbar from "./Navbar";
 
-function InnerHeaderStyle2(props) {
-  const { pagetitle } = props;
-  const Breadcrumbtextone = props.Breadcrumbtext1;
-  const Breadcrumbtexttwo = props.Breadcrumbtext2;
-  const firstword = props.Word1;
-  const secondtword = props.Word2;
-  const typewriterStrings = props.Typewriter;
+function InnerHeaderStyle2() {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -47,29 +36,27 @@ function InnerHeaderStyle2(props) {
       <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 style2-breadcrumb">
         <div data-aos="fade-down" className="pb-16 px-6 pt-5">
           <div className="columns-1">
-          <Breadcrumbtext1 Breadcrumbtext1 ={Breadcrumbtextone} />
-            <Breadcrumbtext2 Breadcrumbtext2 ={Breadcrumbtexttwo} />
+            <p>
+            Providing services for over 12 Years about
+            </p>{" "}
+            <br />
           </div>
-          <h2 className="page-title"> 
-                <Typewriter
-                  options={{
-                    strings: typewriterStrings,
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-                </h2>
+          <h2>
+            <Typewriter
+              options={{
+                strings: [
+                  "Frontend Developer",
+                  "WordPress Developer",
+                  "Content Writer",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </h2>{" "}
           <br />
           <div className="flex">
-          <div className="breadcrumbs breadcrumb-style2  bg-primaryLinear">
-            <div className="container flex flex-wrap mx-auto">
-                <div className="breadcrumb">
-                <Link to={'/'}> <span className="home">Home</span></Link>
-                <span><span>{pagetitle}</span></span>
-                </div>
-            </div>
-        </div>
-            
+            <button className="btn">More About Me</button>
           </div>
          
         </div>
@@ -87,7 +74,7 @@ function InnerHeaderStyle2(props) {
           className="absolute h-3/5 md:w-4/12 w-8/12 top-0 right-0 bg-primaryLinear -z-10 s2-breadcrumb-border"
         >
           <h1 className="rotate-90 absolute rotate-90 absolute top-[40%] right-[-15%] text-[#EAF2FA]">
-          <Word1 Word1 = {firstword} /> <span className="text-dark_primary"><Word2 Word2 = {secondtword} /></span>
+            Niresh's <span className="text-dark_primary">Blog</span>
           </h1>
         </div>
         

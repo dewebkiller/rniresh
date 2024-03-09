@@ -1,5 +1,5 @@
 import React  from "react";
-import InnerHeader from "./Innerheader";
+import InnerHeaderStyle2 from "./InnerHeaderStyle2";
 import AboutSectionOne from "./AboutSectionOne";
 import EducationExperience from "./EducationExperience";
 import WorkProcess from "./WorkProcess";
@@ -8,8 +8,10 @@ import Footer from "./Footer";
 
 function About (props) {
   const pagetitle ="About Me";
-  const breadcrumbText = "Providing services for over 12 Years about";
-  const breadcrumbText2 = "Qualified & Experiened";
+  const breadcrumbText = "Providing services for over 12 Years";
+  const breadcrumbText1 = "Qualified & Experiened";
+  const word1 = "About"
+  const word2 = "Me"
   const typewriterStrings = [
     "Frontend Developer",
     "WordPress Developer",
@@ -17,7 +19,7 @@ function About (props) {
   ];
   return (
     <>
-    <InnerHeader Breadcrumbtext1={breadcrumbText} Breadcrumbtext2={breadcrumbText2} Typewriter={typewriterStrings} pagetitle={pagetitle}/>
+    <InnerHeaderStyle2 Breadcrumbtext1={breadcrumbText} Breadcrumbtext2={breadcrumbText1} Typewriter={typewriterStrings} pagetitle={pagetitle} Word1={word1} Word2={word2} />
     <AboutSectionOne />
     <EducationExperience />
     <WorkProcess />

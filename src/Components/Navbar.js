@@ -1,7 +1,9 @@
 import React  from "react";
 import { Link } from "react-router-dom";
 function Navbar () {
+  const dewebkiller = "https://dewebkiller.com";
   return (
+    
     <>
     <div className="main-header">
     <nav className="border-gray-200 dark:border-gray-700">
@@ -17,7 +19,7 @@ function Navbar () {
      <Link to={'/About'}> <li>About</li></Link>
      <Link to={'/Services'}> <li>Services</li></Link>
      <Link to={'/Portfolio'}> <li>Portfolio</li></Link>
-     <Link to={'/Blog'}> <li>Blog</li></Link>
+     <Link to={dewebkiller} target="_blank"> <li>Blog</li></Link>
      <Link to={'/Contact'}> <li>Contact</li></Link>
     </ul>
     </div>
