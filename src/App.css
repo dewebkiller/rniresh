@@ -29,6 +29,15 @@ p {
   top: 0;
   z-index: 999;
 }
+#navbar-default ul li a.active,   #navbar-default ul li a:hover {
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 0.3rem 1.5rem;
+}
+#navbar-default ul li a {
+  border: 1px solid transparent;
+  padding: 0.3rem 1.5rem;
+}
 .text-dark_primary {
   --tw-text-opacity: 1;
   color: rgb(6 34 63 / var(--tw-text-opacity));
@@ -1138,6 +1147,7 @@ border-radius: 5px;
     float: right;
     width: 20%;
   }
+
   header .bg-primaryLinear {
     background-color: var(--color-white);
     background-image: none;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar(props) {
   const dewebkiller = "https://dewebkiller.com";
@@ -13,7 +13,7 @@ function Navbar(props) {
     <>
       <div className="main-header">
         <nav className="border-gray-200 dark:border-gray-700">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 float-right">
+          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto float-right">
             <button
               data-collapse-toggle="navbar-default"
               type="button"
@@ -65,24 +65,38 @@ function Navbar(props) {
               id="navbar-default"
             >
               <ul className="flex flex-col font-medium mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-                <Link to={"/"}>
-                  <li>Home</li>
-                </Link>
-                <Link to={"/About"}>
-                  <li>About</li>
-                </Link>
-                <Link to={"/Services"}>
-                  <li>Services</li>
-                </Link>
-                <Link to={"/Portfolio"}>
-                  <li>Portfolio</li>
-                </Link>
-                <Link to={dewebkiller} target="_blank">
-                  <li>Blog</li>
-                </Link>
-                <Link to={"/Contact"}>
-                  <li>Contact</li>
-                </Link>
+              <li>
+                  <NavLink to={"/"} activeClassName="active">
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                <NavLink to={"/About"} activeClassName="active">
+                  About
+                </NavLink>
+                </li>
+                <li>
+                <NavLink to={"/Services"} activeClassName="active">
+                  Services
+                </NavLink>
+                </li>
+                <li>
+                <NavLink to={"/Portfolio"} activeClassName="active">
+                  Portfolio
+                </NavLink>
+                </li>
+                
+                <li>
+                  <a href={dewebkiller} target="_blank" rel="noreferrer">
+                  Blog
+                </a>
+                </li>
+                <li>
+                <NavLink to={"/Contact"} activeClassName="active">
+                  Contact
+                </NavLink>
+                </li>
+                
               </ul>
             </div>
           </div>
