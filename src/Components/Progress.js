@@ -19,7 +19,7 @@ import illustrator from "../images/illustrator.png";
 
 function Progress () {
   return (
-   <section className="container relative overflow-hidden mx-auto px-4 sm:px-6">
+   <section className="container relative overflow-hidden mx-auto px-4 sm:px-6 skills-section">
 <div className="px-5 py-20">
 <div className="flex flex-wrap gap-4 justify-center mb-10">
           <div className="text-center">
@@ -85,7 +85,7 @@ function Progress () {
       </div>
       
     </div>
-    <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 my-20" data-aos="fade-left" data-aos-delay="500">
+    <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 my-20 skills-right" data-aos="fade-left" data-aos-delay="500">
     <p className="leading-7">
     I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.
                 </p>

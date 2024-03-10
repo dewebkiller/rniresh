@@ -990,24 +990,24 @@ radial-gradient(at 74% 75%, hsla(304,82%,70%,1) 0px, transparent 50%);
   background-position: center !important;
   background-size: cover !important;
 }
-.section-faq .css-1c35hjw-MuiPaper-root-MuiAccordion-root.accordion_item{
+.section-faq .MuiPaper-elevation1.accordion_item{
   background: rgb(245 250 255);
   margin-bottom: 30px;
   border-radius: 25px;
   box-shadow: 0px 5px 10px 0px rgb(155 155 155 / 10%) !important;
 }
-.section-faq .css-1c35hjw-MuiPaper-root-MuiAccordion-root.accordion_item:before {
+.section-faq .MuiPaper-elevation1.accordion_item:before {
   display: none;
 }
-.section-faq .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+.section-faq .cMuiAccordionSummary-root {
   padding: 0 25px;
 }
-.section-faq .css-8zfq7-MuiTypography-root{
+.section-faq .MuiAccordionSummary-content .MuiTypography-root{
   color: #2274a5;
   font-weight: bold;
   font-family: inherit;
 }
-.section-faq .css-yw020d-MuiAccordionSummary-expandIconWrapper {
+.section-faq .MuiAccordionSummary-expandIconWrapper {
   position: absolute;
   top: 0;
   right: 0;
@@ -1124,4 +1124,63 @@ border-radius: 5px;
   background-color: var(--color-light-blue);
   padding: 10px 25px;
     border-radius: 30px;
+}
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+  .dwk-header-top {
+    width: 100%;
+    padding: 1rem;
+  }
+  .logo-wrapper {
+    float: left;
+    width: 80%;
+  }
+  .navbar-wrapper {
+    float: right;
+    width: 20%;
+  }
+  header .bg-primaryLinear {
+    background-color: var(--color-white);
+    background-image: none;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+  header button {
+    background: rgb(6 34 63 / var(--tw-text-opacity)) !important;
+  }
+  .testimonial-section > .container > .pt-20 {
+    padding-bottom: 5rem;
+  }
+  .testimonial-section .testimonial-image {
+    display: none;
+  }
+  .testimonial-wrapper {
+    padding: 50px 20px;
+  }
+  .testimonialmainwrapper {
+    max-width: 100%;
+    margin-top: 2.5rem;
+  }
+  .flex.items-center.justify-center.-m-6.overflow-hidden.bg-white.rounded-full {
+    float: left;
+    width: 40%;
+}
+  .progress-content {
+    float: left;
+    width: 76%;
+    text-wrap: unset;
+    display: grid;
+}
+.contact-info-wrapper > .bg-white {
+  display: flex;
+}
+.g-touch-icon-wrapper {
+  padding-right: 1rem;
+}
+.skills__items.my-20 {
+  margin-bottom: 0;
+}
+.skills-section .skills-right {
+  margin-bottom: 0;
+}
 }

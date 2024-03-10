@@ -15,7 +15,7 @@ function Header() {
       <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
         <div className="absolute dwk-header-top py-8">
         <div className="container md:grid md:grid-cols-12 md:gap-6">
-          <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
+          <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 logo-wrapper">
           <div className="site-logo">
             <img
             src={nireshlogo}
@@ -26,7 +26,7 @@ function Header() {
           />
           </div>
           </div>  
-          <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
+          <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 navbar-wrapper">
           <Navbar />
           </div>
         </div>
@@ -37,7 +37,7 @@ function Header() {
           data-aos-delay="1200"
           className="absolute h-full md:w-4/12 w-8/12 top-0 right-0 bg-primaryLinear bottom-0 -z-10"
         >
-          <h1 className="rotate-90 absolute rotate-90 absolute top-[40%] right-[-15%] text-[#EAF2FA]">
+          <h1 className="rotate-90 absolute rotate-90 absolute top-[20%] right-[-15%] text-[#EAF2FA] lg:top-[40%]">
             Niresh <span className="text-dark_primary">Shrestha</span>
           </h1>
         </div>

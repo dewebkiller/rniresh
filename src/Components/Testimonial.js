@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 
 export const Testimonial = () => {
   return (
-    <section className="min-h-fit bg-bg_light_primary">
+    <section className="min-h-fit bg-bg_light_primary testimonial-section">
      <div className="container mx-auto">
      <div className="px-5 pt-20">
       <div className="md:grid md:grid-cols-12 md:gap-6">
@@ -14,7 +14,7 @@ export const Testimonial = () => {
     <div className="text-center">
           <h2 className="title" data-aos="fade-down">Testimonials</h2>
           <h4 className="subtitle" data-aos="fade-down">Customers feedback</h4>
-          <img src={testimonailbg} alt="My Skills" className="h-full object-cover" data-aos="fade-left"/> 
+          <img src={testimonailbg} alt="My Skills" className="h-full object-cover testimonial-image" data-aos="fade-left"/> 
         </div>
     </div>
     <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 testimonialmainwrapper" data-aos="fade-left">
