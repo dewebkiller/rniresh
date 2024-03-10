@@ -1148,6 +1148,21 @@ border-radius: 5px;
   header button {
     background: rgb(6 34 63 / var(--tw-text-opacity)) !important;
   }
+  .mobilemenu {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    padding: 1rem;
+    
+}
+.mobilemenu > ul {
+  margin-top: 0;
+  background: none;
+  background: rgba(182, 204, 245, 0.8);
+  padding: 1rem;
+  gap: 15px;
+}
   .testimonial-section > .container > .pt-20 {
     padding-bottom: 5rem;
   }
