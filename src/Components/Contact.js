@@ -1,9 +1,11 @@
 import React  from "react";
+import useDocumentTitle from './useDocumentTitle'
 import InnerHeaderStyle2 from "./InnerHeaderStyle2";
 import Getintouch from "./Getintouch";
 import Footer from "./Footer";
 
 function Contact (props) {
+  useDocumentTitle('Niresh Shrestha | Hire Freelance WordPress Developer Nepal')
   const pagetitle ="Contact";
   const breadcrumbText = "Providing services for over 12 Years";
   const breadcrumbText1 = "Qualified & Experiened";

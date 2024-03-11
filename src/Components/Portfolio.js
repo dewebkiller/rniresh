@@ -1,10 +1,12 @@
 import React  from "react";
+import useDocumentTitle from './useDocumentTitle'
 import InnerHeaderStyle2 from "./InnerHeaderStyle2";
 import PortfolioSectionOne from "./PortfolioSectionOne";
 import PortfolioList from "./PortfolioList";
 import Footer from "./Footer";
 
 function Portfolio (props) {
+  useDocumentTitle('Niresh Shrestha | Portfolio- Awesome projects developed | Freelance WordPress Developer Nepal')
   const pagetitle ="My Portfolio";
   const breadcrumbText = "Providing services for over 12 Years";
   const breadcrumbText1 = "Qualified & Experiened";

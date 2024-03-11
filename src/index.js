@@ -2,7 +2,6 @@ import React from 'react'
 import 'aos/dist/aos.css';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import Router from './Router';
 
 
