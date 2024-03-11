@@ -1,5 +1,5 @@
 import React from 'react';
-import useDocumentTitle from './Components/useDocumentTitle'
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import Header from './Components/Header';
 import Skills from './Components/Skills';
 import Progress from './Components/Progress';
@@ -12,8 +12,13 @@ import Footer from './Components/Footer';
 import './App.css';
 
 function App() {
-  useDocumentTitle('Niresh Shrestha | Frontend developer, WordPress Developer| Freelance WordPress Developer Nepal')
   return (
+  <HelmetProvider>
+    <Helmet>
+  <title>Niresh Shrestha | Frontend developer, WordPress Developer| Freelance WordPress Developer Nepal</title>
+  <meta name="description" content="Niresh Shreastha is a skilled frontend developer and WordPress developer with a passion for creating visually stunning and highly functional websites."/>
+  <meta name="keywords" content="Niresh Shrestha, Frontend developer, WordPress Developer, Freelance WordPress Developer Nepal kathmandu, Web Customization Services Kathmandu "/>
+</Helmet>
     <div className="header">
       <Header />
       <Skills />
@@ -25,6 +30,7 @@ function App() {
       <Getintouch />
       <Footer />
     </div>
+    </HelmetProvider>
   );
 }
 
