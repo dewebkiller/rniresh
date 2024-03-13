@@ -5,7 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import manwithtab from '../images/manwithtab.png'
+import nireshwepdev from "../images/niresh-shrestha-wpdeveloper.png";
 
 function FAQ(props) {
   useEffect(() => {
@@ -138,7 +138,7 @@ function FAQ(props) {
       </Accordion>
       </div>
       <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 relative">
-<img src={manwithtab} alt="" data-aos="fade-up" className="faqimage"/>
+<img src={nireshwepdev} alt="" data-aos="fade-up" className="faqimage"/>
       </div>
     </div>
         </div>

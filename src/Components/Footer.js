@@ -9,12 +9,19 @@ import {
   faFacebook,
   faLinkedin,
   faGithub,
+  faWordpress
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
   const facebook = "https://www.facebook.com/dewebkiller";
-  library.add(fab, faTwitterSquare, faFacebook, faLinkedin, faGithub);
+  const instagram = "https://www.instagram.com/dewebkiller";
+  const linkedin = "https://www.linkedin.com/in/dewebkiller/";
+  const github = "https://github.com/dewebkiller";
+  const twitter = "https://twitter.com/dewebkiller";
+  const dribble = "https://dribbble.com/dewebkiller";
+  const wordpress = "https://profiles.wordpress.org/dewebkiller/";
+  library.add(fab, faTwitterSquare, faFacebook, faLinkedin, faGithub, faWordpress);
   return (
     <section className="min-h-fit footer-section py-6 bg-dark_primary">
       <div className="container mx-auto">
@@ -29,7 +36,7 @@ function Footer() {
             </li>
             <li>
               <Tooltip title="Instagram" arrow placement="top">
-                <Link to={facebook} target="_blank">
+                <Link to={instagram} target="_blank">
                 <FontAwesomeIcon icon="fa-brands fa-instagram" />
                 </Link>
               </Tooltip>
@@ -37,36 +44,36 @@ function Footer() {
             
             <li>
             <Tooltip title="Linkedin" arrow placement="top">
-                <Link to={facebook} target="_blank">
+                <Link to={linkedin} target="_blank">
                 <FontAwesomeIcon icon="fa-brands fa-linkedin" />
                 </Link>
               </Tooltip>  
             </li>
             <li>
-            <Tooltip title="Linkedin" arrow placement="top">
-                <Link to={facebook} target="_blank">
+            <Tooltip title="Github" arrow placement="top">
+                <Link to={github} target="_blank">
                 <FontAwesomeIcon icon="fa-brands fa-github" />
                 </Link>
               </Tooltip>
             </li>
             <li>
-            <Tooltip title="Twitter" arrow placement="top">
-                <Link to={facebook} target="_blank">
+            <Tooltip title="X / Twitter" arrow placement="top">
+                <Link to={twitter} target="_blank">
                 <FontAwesomeIcon icon="fa-brands fa-x-twitter" />
                 </Link>
               </Tooltip>
             </li>
             <li>
             <Tooltip title="Dribble" arrow placement="top">
-                <Link to={facebook} target="_blank">
+                <Link to={dribble} target="_blank">
                 <FontAwesomeIcon icon="fa-brands fa-dribbble" />
                 </Link>
               </Tooltip>
             </li>
             <li>
-            <Tooltip title="Pinterest" arrow placement="top">
-                <Link to={facebook} target="_blank">
-                <FontAwesomeIcon icon="fa-brands fa-pinterest-p" />
+            <Tooltip title="WordPress" arrow placement="top">
+                <Link to={wordpress} target="_blank">
+                <FontAwesomeIcon icon="fa-brands fa-wordpress" />
                 </Link>
               </Tooltip>
             </li>

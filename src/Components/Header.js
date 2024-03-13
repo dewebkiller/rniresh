@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import profileimage from "../images/profile.png";
+import nireshshrestha from "../images/niresh-shrestha-profile.png";
 import nireshlogo from "../images/niresh.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -88,7 +88,7 @@ function Header() {
         </div>
         <div className="md:h-[37rem] h-96">
           <img
-            src={profileimage}
+            src={nireshshrestha}
             alt="Logo"
             className="h-full object-cover"
             data-aos="slide-up"

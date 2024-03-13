@@ -21,7 +21,7 @@ export const Hireme = () => {
     </div>
     <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-4 lg:col-span-4 testimonialmainwrapper" data-aos="fade-left">
     <div data-aos="fade-left" className="border-2 border-dark_primary max-w-sm p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem] aos-init aos-animate">
-      <p className="leading-7">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean</p>
+      <p className="leading-7">Experienced WordPress developer proficient in custom theme and plugin development. Let's collaborate to bring your WordPress project to life!</p>
       <br/>
       <button className="btn bg-dark_primary text-white bg-sky-500/100"><Link to={'/Contact'}>Hire Me</Link></button>
       </div>
