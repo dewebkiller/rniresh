@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar, A11y } from "swiper";
-import nireshtestimonial from "../images/niresh-testimonial.png";
+import nireshtestimonial from "../images/niresh-testimonials.png";
 import "swiper/css";
 import "swiper/css/navigation";
 

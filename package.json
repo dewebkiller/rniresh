@@ -3,7 +3,9 @@
   "homepage": "https://niresh.com.np",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://www.dewebkiller.com",
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",

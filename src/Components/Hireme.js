@@ -1,4 +1,5 @@
-import hiremebg from "../images/hireme.png";
+
+import nireshhire from "../images/niresh-hireme.png";
 import { Link } from "react-router-dom";
 
 export const Hireme = () => {
@@ -14,7 +15,7 @@ export const Hireme = () => {
           <h4 className="subtitle" data-aos="fade-down">For your project</h4>
       </div>
           <div className="right-image md:col-span-7 lg:col-span-7">
-          <img src={hiremebg} alt="My Skills" className="h-full object-cover" data-aos="fade-left" width="70%"/> 
+          <img src={nireshhire} alt="My Skills" className="h-full object-cover" data-aos="fade-left" width="70%"/> 
           </div>
           
         </div>

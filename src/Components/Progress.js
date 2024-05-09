@@ -10,6 +10,9 @@ import sass from "../images/sass.png";
 import git from "../images/git.png";
 import wordpress from "../images/wordpress.png";
 import woocommerce from "../images/woocommerce.png";
+import elementor from "../images/elementor.png";
+import divi from "../images/divi.png";
+import mysql from "../images/mysql.png";
 import php from "../images/php.png";
 import photoshop from "../images/photoshop.png";
 import adobexd from "../images/adobe-xd.png";
@@ -155,6 +158,13 @@ function Progress () {
         </Tooltip>
       </li>
       <li className="skills__item has-tooltip" data-aos="fade-up" data-aos-delay="500">
+      <Tooltip title="php" arrow placement="top">
+        <div className="skills__item__icon">
+        <img src={php} alt="php" />
+        </div>
+        </Tooltip>
+      </li>
+      <li className="skills__item has-tooltip" data-aos="fade-up" data-aos-delay="500">
       <Tooltip title="wordpress" arrow placement="top">
         <div className="skills__item__icon">
         <img src={wordpress} alt="wordpress" />
@@ -168,10 +178,25 @@ function Progress () {
         </div>
         </Tooltip>
       </li>
+
       <li className="skills__item has-tooltip" data-aos="fade-up" data-aos-delay="500">
-      <Tooltip title="php" arrow placement="top">
+      <Tooltip title="elementor" arrow placement="top">
         <div className="skills__item__icon">
-        <img src={php} alt="php" />
+        <img src={elementor} alt="elementor" />
+        </div>
+        </Tooltip>
+      </li>
+      <li className="skills__item has-tooltip" data-aos="fade-up" data-aos-delay="500">
+      <Tooltip title="Divi" arrow placement="top">
+        <div className="skills__item__icon">
+        <img src={divi} alt="Divi" />
+        </div>
+        </Tooltip>
+      </li>
+      <li className="skills__item has-tooltip" data-aos="fade-up" data-aos-delay="500">
+      <Tooltip title="Mysql" arrow placement="top">
+        <div className="skills__item__icon">
+        <img src={mysql} alt="Mysql" />
         </div>
         </Tooltip>
       </li>
