@@ -9,7 +9,11 @@ import nireshwepdev from "../images/niresh-shrestha-wpdeveloper.png";
 
 function FAQ(props) {
   useEffect(() => {
-    AOS.init();
+    AOS.init(
+      {
+        disable: 'mobile',
+      }
+    );
   }, []);
   const [expanded, setExpanded] = React.useState(false);
 

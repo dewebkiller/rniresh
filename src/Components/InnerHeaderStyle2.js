@@ -19,14 +19,18 @@ function InnerHeaderStyle2(props) {
   const secondtword = props.Word2;
   const typewriterStrings = props.Typewriter;
   useEffect(() => {
-    AOS.init();
+    AOS.init(
+      {
+        disable: 'mobile',
+      }
+    );
   }, []);
   return (
     <header className="overflow-hidden style2-breadcrumb-wrapper">
       <div className="flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
         <div className="absolute dwk-header-top py-8">
         <div className="container md:grid md:grid-cols-12 md:gap-6">
-          <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
+          <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 logo-wrapper">
           <div className="site-logo">
             <img
             src={nireshlogo}
@@ -37,7 +41,7 @@ function InnerHeaderStyle2(props) {
           />
           </div>
           </div>  
-          <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
+          <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 navbar-wrapper">
           <Navbar />
           </div>
         </div>

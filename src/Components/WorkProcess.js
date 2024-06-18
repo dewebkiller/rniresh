@@ -8,7 +8,11 @@ import testing from "../lottie/testing.json";
 import launch from "../lottie/launch.json";
 function WorkProcess(props) {
   useEffect(() => {
-    AOS.init();
+    AOS.init(
+      {
+        disable: 'mobile',
+      }
+    );
   }, []);
   return (
     <>
@@ -25,7 +29,7 @@ function WorkProcess(props) {
           </div>
         </div>
         <div className="px-5">
-          <div className="flex gap-5 justify-around items-start">
+          <div className="flex gap-5 justify-around items-start work_process_container">
             <div className="work_process_wrapper wpw_color_purple text-left"  data-aos="fade-right" data-aos-delay="200">
               <Player
                 autoplay

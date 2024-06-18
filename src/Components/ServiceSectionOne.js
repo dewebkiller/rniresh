@@ -2,7 +2,7 @@ import React  from "react";
 function ServiceSectionOne (props) {
   return (
     <>
-    <div className="container mx-auto py-20">
+    <div className="container mx-auto py-20 main-content">
     <div className="md:grid md:grid-cols-12 md:gap-6">
       
         <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">

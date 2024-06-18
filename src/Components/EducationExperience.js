@@ -4,7 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStarOfLife } from "@fortawesome/free-solid-svg-icons";
 function EducationExperience(props) {
   useEffect(() => {
-    AOS.init();
+    AOS.init(
+      {
+        disable: 'mobile',
+      }
+    );
   }, []);
   return (
     <>

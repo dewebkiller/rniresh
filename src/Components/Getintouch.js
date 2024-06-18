@@ -38,7 +38,7 @@ const Getintouch = () => {
         <div className="px-5 pt-20 pb-20">
           <div className="md:grid md:grid-cols-12 md:gap-6">
             {/* Contact info section */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-5" data-aos="fade-left">
+            <div className="md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-5" data-aos="fade-left">
               <div className="max-w-sm sm:min-w-[22rem] aos-init aos-animate">
                 <h4 className="title" data-aos="fade-down">What’s your story?</h4>
                 <h4 className="subtitle" data-aos="fade-down">Get in touch</h4>
@@ -53,9 +53,9 @@ const Getintouch = () => {
               </div>
             </div>
             {/* Contact form section */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-7">
+            <div className="md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-7">
               <div className="text-left md:grid md:grid-cols-12 md:gap-6">
-                <div className="max-w-xl md:max-w-none md:w-full md:col-span-5 lg:col-span-12 md:col-span-12 lg:col-span-12">
+                <div className="md:max-w-none md:w-full md:col-span-5 lg:col-span-12 md:col-span-12 lg:col-span-12">
                   <h4 className="subtitle" data-aos="fade-down">Say something</h4>
                   <div className="formwrapper">
                     <form onSubmit={handleSubmit}>

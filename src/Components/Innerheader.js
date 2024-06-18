@@ -19,7 +19,11 @@ function InnerHeader(props) {
   const Hireicon =  "fa-envelope";
   const typewriterStrings = props.Typewriter;
   useEffect(() => {
-    AOS.init();
+    AOS.init(
+      {
+        disable: 'mobile',
+      }
+    );
   }, []);
   return (
     <>
@@ -31,7 +35,7 @@ function InnerHeader(props) {
         <div className="container mx-auto">
   
         <div className="md:grid md:grid-cols-12 md:gap-6">
-      <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
+      <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 logo-wrapper">
       <div className="site-logo">
             <img
             src={nireshlogo}
@@ -42,7 +46,7 @@ function InnerHeader(props) {
           />
           </div>
       </div>
-      <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 float-right">
+      <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 navbar-wrapper">
         <Navbar />
       </div>
     </div>

@@ -14,7 +14,11 @@ import uiixicon from "../images/ui-ux-icon.png";
 import contentwrittingicon from "../images/content-writting-icon.png";
 function ServiceList(props) {
   useEffect(() => {
-    AOS.init();
+    AOS.init(
+      {
+        disable: 'mobile',
+      }
+    );
   }, []);
   return (
     <>

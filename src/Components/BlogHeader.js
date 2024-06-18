@@ -14,7 +14,11 @@ function BlogHeader(props) {
   const Breadcrumbtextone = props.Breadcrumbtext1;
   const typewriterStrings = props.Typewriter;
   useEffect(() => {
-    AOS.init();
+    AOS.init(
+      {
+        disable: 'mobile',
+      }
+    );
   }, []);
   return (
     <>

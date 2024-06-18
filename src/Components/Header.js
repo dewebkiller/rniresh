@@ -8,7 +8,11 @@ import Navbar from "./Navbar";
 
 function Header() {
   useEffect(() => {
-    AOS.init();
+    AOS.init(
+      {
+        disable: 'mobile',
+      }
+    );
   }, []);
   return (
     <header className="overflow-hidden">
