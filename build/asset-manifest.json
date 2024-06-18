@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.dea01f7c.css",
-    "main.js": "/static/js/main.5814dddf.js",
+    "main.css": "/static/css/main.25e88212.css",
+    "main.js": "/static/js/main.1b11f6d2.js",
     "static/media/niresh-testimonials.png": "/static/media/niresh-testimonials.88c30c64fd04c676566c.png",
     "static/media/thumbnail-wordpress-development.jpg": "/static/media/thumbnail-wordpress-development.98910dd1ec582c56a3f6.jpg",
     "static/media/blogsingle.jpeg": "/static/media/blogsingle.0967324b4f8e52444ccd.jpeg",
@@ -20,11 +20,11 @@
     "static/media/dots-5.png": "/static/media/dots-5.bfdceb50554332de1485.png",
     "static/media/author.webp": "/static/media/author.c25f7884dc4b426be9dd.webp",
     "index.html": "/index.html",
-    "main.dea01f7c.css.map": "/static/css/main.dea01f7c.css.map",
-    "main.5814dddf.js.map": "/static/js/main.5814dddf.js.map"
+    "main.25e88212.css.map": "/static/css/main.25e88212.css.map",
+    "main.1b11f6d2.js.map": "/static/js/main.1b11f6d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.dea01f7c.css",
-    "static/js/main.5814dddf.js"
+    "static/css/main.25e88212.css",
+    "static/js/main.1b11f6d2.js"
   ]
 }
