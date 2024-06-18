@@ -52,8 +52,9 @@ const formatDate = (dateString) => {
               key={index}
               data-aos="fade-up"
               data-aos-delay="300"
-              className="max-w-sm bg-white border rounded-lg shadow"
+              className="max-w-sm bg-white border rounded-lg shadow blog-content-wrapper"
             >
+              <div className='blog-content-top'>
               <a href={post.link} target="_blank" rel="noreferrer">
                 <img
                   className="rounded-t-lg blogthumnail"
@@ -75,9 +76,13 @@ const formatDate = (dateString) => {
                   <h5 className="my-3 font-bold" dangerouslySetInnerHTML={{__html: post.title.rendered}}/>
                 </a>
                 <p className="my-5 font-normal text-gray-700 dark:text-gray-400" dangerouslySetInnerHTML={{__html: post.excerpt.rendered}}/>
-                <a
-                  href={post.link} rel="noreferrer"
-                  className="inline-flex items-center py-2 text-lg font-medium text-center"
+                
+              </div>
+              </div>
+              <div className='blog-content-bottom'>
+              <a
+                  href={post.link} target="_blank" rel="noreferrer"
+                  className="inline-flex items-center p-5 text-lg font-medium text-center"
                 >
                   Read more
                   <svg
@@ -97,6 +102,8 @@ const formatDate = (dateString) => {
                   </svg>
                 </a>
               </div>
+              
+              
             </div>
           ))}
         </div>
