@@ -5,6 +5,7 @@ import Portfolio from "./Components/Portfolio";
 import Blog from "./Components/Blog";
 import Contact from "./Components/Contact";
 import SinglePage from "./Components/SingePage";
+import ContactUs from "./Components/contactform";
 import App from "./App";
 import { BrowserRouter as Routerm, Routes, Route, Navigate } from "react-router-dom";
 
@@ -19,6 +20,7 @@ function Router(){
           <Route path="/blog" element={<Blog/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/singlepage" element={<SinglePage/>} />
+          <Route path="/ContactUs" element={<ContactUs/>} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Routerm>

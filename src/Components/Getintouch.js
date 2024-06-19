@@ -7,6 +7,8 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 const Getintouch = () => {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
+  const subjectRef = useRef(null);
+  const messageRef = useRef(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -21,7 +23,10 @@ const Getintouch = () => {
     try {
       setLoading(true);
       await emailjs.send(serviceId, templateId, {
-        name: nameRef.current.value,
+        full_name: nameRef.current.value,
+        user_email: emailRef.current.value,
+        user_subject: subjectRef.current.value,
+        user_message: messageRef.current.value,
         recipient: emailRef.current.value
       });
       alert("Email successfully sent! Please check your inbox.");
@@ -58,23 +63,23 @@ const Getintouch = () => {
                 <div className="md:max-w-none md:w-full md:col-span-5 lg:col-span-12 md:col-span-12 lg:col-span-12">
                   <h4 className="subtitle" data-aos="fade-down">Say something</h4>
                   <div className="formwrapper">
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} id="Contactform">
                       <div className="md:grid md:grid-cols-12 md:gap-6 mt-5 mb-5 ">
                         <div className="lg:col-span-6 md:col-span-6 lg:col-span-6 ">
-                          <input type="text" placeholder="Full Name" className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40" ref={nameRef} />
+                          <input type="text" placeholder="Full Name" name="full_name" className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40" ref={nameRef} />
                         </div>
                         <div className="lg:col-span-6 md:col-span-6 lg:col-span-6">
-                          <input type="email" placeholder="Email" className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40" ref={emailRef} />
+                          <input type="email" placeholder="Email" name="user_email" className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40" ref={emailRef} />
                         </div>
                       </div>
                       <div className="md:grid md:grid-cols-12 md:gap-6 mt-5 mb-5 ">
                         <div className="lg:col-span-12 md:col-span-12 lg:col-span-12">
-                          <input type="text" placeholder="Subject" className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40" />
+                          <input type="text" placeholder="Subject" name="user_subject" className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40" ref={subjectRef}/>
                         </div>
                       </div>
                       <div className="md:grid md:grid-cols-12 md:gap-6 mt-5 mb-5 ">
                         <div className="lg:col-span-12 md:col-span-12 lg:col-span-12">
-                          <textarea placeholder="Message" rows={8} className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40" />
+                          <textarea placeholder="Message" name="user_message" rows={8} className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40" ref={messageRef}/>
                         </div>
                       </div>
                       <div className="md:grid md:grid-cols-12 md:gap-6 mt-5 mb-5 ">
