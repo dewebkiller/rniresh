@@ -3,7 +3,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Header from './Components/Header';
 import Skills from './Components/Skills';
 import Progress from './Components/Progress';
-import PortfolioSection from './Components/PortfolioSection';
+import PortfolioList from './Components/PortfolioList';
 import Testimonial from './Components/Testimonial';
 import Hireme from './Components/Hireme';
 import BlogSection from './Components/BlogSection';
@@ -24,7 +24,7 @@ function App() {
       <Skills />
       <Progress />
       <Testimonial />
-      <PortfolioSection />
+      <PortfolioList />
       <Hireme />
       <BlogSection />
       <Getintouch />

@@ -1,59 +1,61 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import uiubma from "../images/portfolio/ubma.png";
+import techknowcon from "../images/portfolio/techknowcon.png";
+import himalayandirt from "../images/portfolio/himalayan-dirt.png";
+import curryhouse from "../images/portfolio/curryhousenc.png";
+import aaspas from "../images/portfolio/aaspas.png";
+import axisinfosys from "../images/portfolio/axisinfosys.png";
+
+
 const imgs = [
   {
-    author: "The Lazy Artist Gallery",
+    author: "United black mothers of ameraica",
     tag: "Web development",
-    link: "https://google.com",
-    src: "https://github.com/OlgaKoplik/CodePen/blob/master/filterGallery/1.jpg?raw=true",
+    technology: "WordPress: Elementor",
+    link: "https://unitedblackmothersofamerica.org/",
+    src: uiubma,
+  }, 
+  {
+    author: "Techknowcon",
+    tag: "Web development",
+    technology: "WordPress: Elementor",
+    link: "https://techknowcon.io/",
+    src: techknowcon,
   },
   {
-    author: "Daria Shevtsova",
+    author: "Himalayan Dirt",
+    tag: "Web development",
+    technology: "WordPress: Custom Theme",
+    link: "https://himalayandirt.com/",
+    src: himalayandirt,
+  },
+  {
+    author: "Curry Housenc",
     tag: "Web design",
-    link: "https://google.com",
-    src: "https://github.com/OlgaKoplik/CodePen/blob/master/filterGallery/2.jpg?raw=true",
+    technology: "WordPress: Custom theme",
+    link: "https://www.curryhousenc.com/",
+    src: curryhouse,
   },
   {
-    author: "Kasuma",
-    tag: "Graphic design",
-    link: "https://google.com",
-    src: "https://github.com/OlgaKoplik/CodePen/blob/master/filterGallery/3.jpg?raw=true",
-  },
-  {
-    author: "Dominika Roseclay",
-    tag: "Web development",
-    link: "https://google.com",
-    src: "https://github.com/OlgaKoplik/CodePen/blob/master/filterGallery/4.jpg?raw=true",
-  },
-  {
-    author: "Scott Webb",
-    tag: "Graphic design",
-    link: "https://google.com",
-    src: "https://github.com/OlgaKoplik/CodePen/blob/master/filterGallery/5.jpg?raw=true",
-  },
-  {
-    author: "Jeffrey Czum",
-    tag: "Web development",
-    link: "https://google.com",
-    src: "https://github.com/OlgaKoplik/CodePen/blob/master/filterGallery/6.jpg?raw=true",
-  },
-  {
-    author: "Dominika Roseclay",
+    author: "AASPAS",
     tag: "Web design",
-    link: "https://google.com",
-    src: "https://github.com/OlgaKoplik/CodePen/blob/master/filterGallery/7.jpg?raw=true",
+    technology: "WordPress: Custom Theme",
+    link: "https://aaspas.com.au/",
+    src: aaspas,
   },
   {
-    author: "Valeria Boltneva",
+    author: "Axis Infosys",
     tag: "Web development",
-    link: "https://google.com",
-    src: "https://github.com/OlgaKoplik/CodePen/blob/master/filterGallery/8.jpg?raw=true",
+    technology: "WordPress: Custom Theme",
+    link: "#",
+    src: axisinfosys,
   },
+  
 ];
 
 const filters = [
   { name: "Web design", status: false },
-  { name: "Graphic design", status: false },
   { name: "Web development", status: false },
 ];
 
@@ -82,8 +84,8 @@ const Cards = ({ imgs }) => (
           <img src={img.src} alt={img.author} />
           <figcaption>
             <div>{img.author} </div>
-            <span>{img.tag}</span>
-            <Link to={img.link}>Visit Site</Link>
+            <span>{img.technology}</span>
+            <Link to={img.link} className="btn-capsule" target="_blank">Visit Site → </Link>
           </figcaption>
         </figure>
       </li>

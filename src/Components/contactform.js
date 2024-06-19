@@ -24,7 +24,7 @@ const ContactUs = () => {
         user_email: emailRef.current.value,
         user_subject: subjectRef.current.value,
         user_message: messageRef.current.value,
-        recipient: emailRef.current.value
+        recipient: 'dewebkiller@gmail.com'
       });
       alert("Email successfully sent! Please check your inbox.");
     } catch (error) {
