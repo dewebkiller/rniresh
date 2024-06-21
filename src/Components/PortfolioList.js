@@ -5,7 +5,7 @@ import techknowcon from "../images/portfolio/techknowcon.png";
 import himalayandirt from "../images/portfolio/himalayan-dirt.png";
 import curryhouse from "../images/portfolio/curryhousenc.png";
 import aaspas from "../images/portfolio/aaspas.png";
-import axisinfosys from "../images/portfolio/axisinfosys.png";
+import axisinfosys from "../images/portfolio/axis-thumbnail.jpg";
 
 
 const imgs = [
