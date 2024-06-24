@@ -6,6 +6,9 @@ import himalayandirt from "../images/portfolio/himalayan-dirt.png";
 import curryhouse from "../images/portfolio/curryhousenc.png";
 import aaspas from "../images/portfolio/aaspas.png";
 import axisinfosys from "../images/portfolio/axis.png";
+import gssadvisor from "../images/portfolio/gss-advisor.png";
+import abcd from "../images/portfolio/abcd.png";
+import art3d from "../images/portfolio/3dart.png";
 
 
 const imgs = [
@@ -51,6 +54,27 @@ const imgs = [
     link: "#",
     src: axisinfosys,
   },
+  {
+    author: "GSS Advosor",
+    tag: "Web development",
+    technology: "WordPress: Custom Theme",
+    link: "https://gssadvisors.com/",
+    src: gssadvisor,
+  },
+  {
+    author: "ABCD Group",
+    tag: "WordPress: Custom Theme",
+    technology: "Ui/UX",
+    link: "#",
+    src: abcd,
+  },
+  {
+    author: "3D Art Museum",
+    tag: "WordPress: Custom Theme",
+    technology: "Ui/UX",
+    link: "#",
+    src: art3d,
+  },
   
 ];
 
@@ -93,7 +117,7 @@ const Cards = ({ imgs }) => (
   </ul>
 );
 
-class PortfolioList extends React.Component {
+class PortfolioListInner extends React.Component {
   state = {
     imgs,
     filters,
@@ -187,4 +211,4 @@ class PortfolioList extends React.Component {
     );
   }
 }
-export default PortfolioList;
+export default PortfolioListInner;

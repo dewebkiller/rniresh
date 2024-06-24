@@ -2,7 +2,7 @@ import React  from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import InnerHeaderStyle2 from "./InnerHeaderStyle2";
 import PortfolioSectionOne from "./PortfolioSectionOne";
-import PortfolioList from "./PortfolioList";
+import PortfolioListInner from "./PortfolioListInner";
 import Footer from "./Footer";
 
 function Portfolio (props) {
@@ -26,7 +26,7 @@ function Portfolio (props) {
 </Helmet>
    <InnerHeaderStyle2 Breadcrumbtext1={breadcrumbText} Breadcrumbtext2={breadcrumbText1} Typewriter={typewriterStrings} pagetitle={pagetitle} Word1={word1} Word2={word2} />
     <PortfolioSectionOne />
-    <PortfolioList />
+    <PortfolioListInner />
     <Footer />
     </HelmetProvider>
     </>
