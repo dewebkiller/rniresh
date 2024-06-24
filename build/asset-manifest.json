@@ -1,19 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.56f8d253.css",
-    "main.js": "/static/js/main.80ef1f0f.js",
-    "static/media/curryhousenc.png": "/static/media/curryhousenc.8cc80f295d90409db6cb.png",
+    "main.js": "/static/js/main.e0f1652d.js",
     "static/media/niresh-testimonials.png": "/static/media/niresh-testimonials.88c30c64fd04c676566c.png",
     "static/media/thumbnail-wordpress-development.jpg": "/static/media/thumbnail-wordpress-development.98910dd1ec582c56a3f6.jpg",
-    "static/media/himalayan-dirt.png": "/static/media/himalayan-dirt.fe93f49f0819daeb9c53.png",
-    "static/media/ubma.png": "/static/media/ubma.54148174551769581f2e.png",
+    "static/media/abcd.png": "/static/media/abcd.0a4c9ea9584d5e4e1a75.png",
+    "static/media/aaspas.png": "/static/media/aaspas.46ec755c8731701caee7.png",
+    "static/media/curryhousenc.png": "/static/media/curryhousenc.3b63253ea23cdf11880d.png",
+    "static/media/himalayan-dirt.png": "/static/media/himalayan-dirt.ac1d95b93ae343038f51.png",
     "static/media/blogsingle.jpeg": "/static/media/blogsingle.0967324b4f8e52444ccd.jpeg",
+    "static/media/3dart.png": "/static/media/3dart.8d570446b3eb58f3471c.png",
+    "static/media/axis.png": "/static/media/axis.54dfa9cf4e0a232adb06.png",
+    "static/media/ubma.png": "/static/media/ubma.716b0536786ab6464fe4.png",
+    "static/media/gss-advisor.png": "/static/media/gss-advisor.269f74ed62d403aad5f1.png",
     "static/media/niresh-shrestha-wpdeveloper.png": "/static/media/niresh-shrestha-wpdeveloper.fa4201ac721efdb54833.png",
     "static/media/niresh-shrestha-profile.png": "/static/media/niresh-shrestha-profile.453cc1d8a5cc7b763972.png",
     "static/media/niresh-hireme.png": "/static/media/niresh-hireme.d4bd5a6c1fb4233336b2.png",
-    "static/media/aaspas.png": "/static/media/aaspas.413f9a80ad2d45d41117.png",
-    "static/media/techknowcon.png": "/static/media/techknowcon.ed7e35f73cc5ffd04231.png",
-    "static/media/axisinfosys.png": "/static/media/axisinfosys.6869d07c080e1ddca42d.png",
+    "static/media/techknowcon.png": "/static/media/techknowcon.93ead2fd5526358214e3.png",
     "static/media/graphicdesign.jpg": "/static/media/graphicdesign.e42093319c752b19f1c4.jpg",
     "static/media/content-writing.jpg": "/static/media/content-writing.414fb5b15d594a587011.jpg",
     "static/media/ui-ux.jpg": "/static/media/ui-ux.a8a58c47e92a4e2580e6.jpg",
@@ -27,10 +30,10 @@
     "static/media/author.webp": "/static/media/author.c25f7884dc4b426be9dd.webp",
     "index.html": "/index.html",
     "main.56f8d253.css.map": "/static/css/main.56f8d253.css.map",
-    "main.80ef1f0f.js.map": "/static/js/main.80ef1f0f.js.map"
+    "main.e0f1652d.js.map": "/static/js/main.e0f1652d.js.map"
   },
   "entrypoints": [
     "static/css/main.56f8d253.css",
-    "static/js/main.80ef1f0f.js"
+    "static/js/main.e0f1652d.js"
   ]
 }

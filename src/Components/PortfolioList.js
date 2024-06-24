@@ -10,7 +10,7 @@ import axisinfosys from "../images/portfolio/axis.png";
 
 const imgs = [
   {
-    author: "United black mothers of ameraica",
+    author: "United Black Mothers of America",
     tag: "Web development",
     technology: "WordPress: Elementor",
     link: "https://unitedblackmothersofamerica.org/",

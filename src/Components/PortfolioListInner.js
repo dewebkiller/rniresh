@@ -13,7 +13,7 @@ import art3d from "../images/portfolio/3dart.png";
 
 const imgs = [
   {
-    author: "United black mothers of ameraica",
+    author: "United Black Mothers of America",
     tag: "Web development",
     technology: "WordPress: Elementor",
     link: "https://unitedblackmothersofamerica.org/",
