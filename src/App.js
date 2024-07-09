@@ -8,6 +8,7 @@ import Testimonial from './Components/Testimonial';
 import Hireme from './Components/Hireme';
 import BlogSection from './Components/BlogSection';
 import Getintouch from './Components/Getintouch';
+import FooterSocial from './Components/FooterSocial';
 import Footer from './Components/Footer';
 import './App.css';
 
@@ -29,6 +30,7 @@ function App() {
       <BlogSection />
       <Getintouch />
       <Footer />
+      <FooterSocial />
     </div>
     </HelmetProvider>
   );

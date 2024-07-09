@@ -1319,6 +1319,42 @@ h6 {
   padding: 10px 25px;
   border-radius: 30px;
 }
+.footer-social-section {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
+}
+.footer-social-section.hide {
+  transform: translateY(100%);
+}
+.footer-social-section.show {
+  transform: translateY(0);
+}
+.footer-social-section ul {
+  gap: 30px;
+}
+.footer-social-section ul li {
+  box-shadow: var(--card-shadow);
+  text-align: left;
+  background: var(--color-white);
+  padding: 1.25rem;
+}
+.footer-social-section ul li h6 {
+  font-size: 14px;
+  line-height: 18px;
+}
+.footer-social-section ul li p {
+  margin-bottom: 0;
+}
+.footer-social-section ul li a {
+  gap: 15px;
+  align-items: center;
+}
+.footer-social-section ul li img {
+  width: 36px;
+}
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   h2 {
     font-size: 2rem;

@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.56f8d253.css",
-    "main.js": "/static/js/main.e0f1652d.js",
+    "main.css": "/static/css/main.80047e8b.css",
+    "main.js": "/static/js/main.ce1f37f1.js",
+    "static/media/aaspas.png": "/static/media/aaspas.cee48876b49eb80e9d1a.png",
+    "static/media/ubma.png": "/static/media/ubma.01cc24a1ad1ab93c21f0.png",
+    "static/media/axis.png": "/static/media/axis.d15c76d375e7d4512a73.png",
+    "static/media/curryhousenc.png": "/static/media/curryhousenc.faf20117fad9e18f6f82.png",
     "static/media/niresh-testimonials.png": "/static/media/niresh-testimonials.88c30c64fd04c676566c.png",
     "static/media/thumbnail-wordpress-development.jpg": "/static/media/thumbnail-wordpress-development.98910dd1ec582c56a3f6.jpg",
     "static/media/abcd.png": "/static/media/abcd.0a4c9ea9584d5e4e1a75.png",
-    "static/media/aaspas.png": "/static/media/aaspas.46ec755c8731701caee7.png",
-    "static/media/curryhousenc.png": "/static/media/curryhousenc.3b63253ea23cdf11880d.png",
-    "static/media/himalayan-dirt.png": "/static/media/himalayan-dirt.ac1d95b93ae343038f51.png",
+    "static/media/himalayan-dirt.png": "/static/media/himalayan-dirt.e4133159272fd5090932.png",
     "static/media/blogsingle.jpeg": "/static/media/blogsingle.0967324b4f8e52444ccd.jpeg",
     "static/media/3dart.png": "/static/media/3dart.8d570446b3eb58f3471c.png",
-    "static/media/axis.png": "/static/media/axis.54dfa9cf4e0a232adb06.png",
-    "static/media/ubma.png": "/static/media/ubma.716b0536786ab6464fe4.png",
     "static/media/gss-advisor.png": "/static/media/gss-advisor.269f74ed62d403aad5f1.png",
     "static/media/niresh-shrestha-wpdeveloper.png": "/static/media/niresh-shrestha-wpdeveloper.fa4201ac721efdb54833.png",
     "static/media/niresh-shrestha-profile.png": "/static/media/niresh-shrestha-profile.453cc1d8a5cc7b763972.png",
@@ -29,11 +29,11 @@
     "static/media/dots-5.png": "/static/media/dots-5.bfdceb50554332de1485.png",
     "static/media/author.webp": "/static/media/author.c25f7884dc4b426be9dd.webp",
     "index.html": "/index.html",
-    "main.56f8d253.css.map": "/static/css/main.56f8d253.css.map",
-    "main.e0f1652d.js.map": "/static/js/main.e0f1652d.js.map"
+    "main.80047e8b.css.map": "/static/css/main.80047e8b.css.map",
+    "main.ce1f37f1.js.map": "/static/js/main.ce1f37f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.56f8d253.css",
-    "static/js/main.e0f1652d.js"
+    "static/css/main.80047e8b.css",
+    "static/js/main.ce1f37f1.js"
   ]
 }
