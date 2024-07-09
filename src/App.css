@@ -28,6 +28,23 @@ p {
 .dwk-header-top {
   top: 0;
   z-index: 999;
+  transition: transform 0.3s ease-in-out;
+}
+.dwk-header-top.hide {
+  transform: translateY(-100%);
+}
+
+.dwk-header-top.show {
+  transform: translateY(0);
+    position: fixed;
+    background: #fff;
+    box-shadow: 0px 5px 8px 0px #dfdfdf;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 5%;
+}
+.dwk-header-top.show .site-logo img {
+width: 50%;
 }
 #navbar-default ul li a.active,
 #navbar-default ul li a:hover {

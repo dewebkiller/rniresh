@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import nireshshrestha from "../images/niresh-shrestha-profile.png";
 import nireshlogo from "../images/niresh.svg";
 import AOS from "aos";
@@ -7,17 +7,34 @@ import Typewriter from "typewriter-effect";
 import Navbar from "./Navbar";
 
 function Header() {
+  const [showHeader, setShowHeader] = useState(true);
+  let lastScrollY = window.pageYOffset;
+
+  const handleScroll = () => {
+    if (window.pageYOffset > lastScrollY) {
+      setShowHeader(false);
+    } else {
+      setShowHeader(true);
+    }
+    lastScrollY = window.pageYOffset;
+  };
+
   useEffect(() => {
-    AOS.init(
-      {
-        disable: 'mobile',
-      }
-    );
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
+  useEffect(() => {
+    AOS.init({
+      disable: 'mobile',
+    });
   }, []);
   return (
     <header className="overflow-hidden">
       <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
-        <div className="absolute dwk-header-top py-8">
+      <div className={`absolute dwk-header-top py-8 ${showHeader ? 'show' : 'hide'}`}>
         <div className="container md:grid md:grid-cols-12 md:gap-6">
           <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 logo-wrapper">
           <div className="site-logo">
