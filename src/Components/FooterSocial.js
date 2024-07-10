@@ -36,9 +36,9 @@ function FooterSocial() {
   return (
     <section className={`footer-social-section py-1 bg-bg_light_primary ${showFooter ? 'show' : 'hide'}`}>
       <div className="container mx-auto">
-        <footer className="p-3 text-center">
+        <footer className="p-1 text-center">
           <List className="flex">
-            <ListItem className="lg:col-span-3 p-5">
+            <ListItem className="lg:col-span-3 p-3">
               <Tooltip title="Dribbble" arrow placement="top">
                 <Link to={dribble} target="_blank" className="flex">
                   <div className="si-left">
@@ -51,7 +51,7 @@ function FooterSocial() {
                 </Link>
               </Tooltip>
             </ListItem>
-            <ListItem className="lg:col-span-3 p-5">
+            <ListItem className="lg:col-span-3 p-3">
               <Tooltip title="GitHub" arrow placement="top">
                 <Link to={github} target="_blank" className="flex">
                   <div className="si-left">
@@ -64,7 +64,7 @@ function FooterSocial() {
                 </Link>
               </Tooltip>
             </ListItem>
-            <ListItem className="lg:col-span-3 p-5">
+            <ListItem className="lg:col-span-3 p-3">
               <Tooltip title="WordPress" arrow placement="top">
                 <Link to={wordpress} target="_blank" className="flex">
                   <div className="si-left">
@@ -77,7 +77,7 @@ function FooterSocial() {
                 </Link>
               </Tooltip>
             </ListItem>
-            <ListItem className="lg:col-span-3 p-5">
+            <ListItem className="lg:col-span-3 p-3">
               <Tooltip title="LinkedIn" arrow placement="top">
                 <Link to={linkedin} target="_blank" className="flex">
                   <div className="si-left">

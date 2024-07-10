@@ -62,7 +62,7 @@ function Header() {
             Niresh <span className="text-dark_primary">Shrestha</span>
           </h1>
         </div>
-        <div data-aos="fade-down" className="pb-16 px-6 pt-5">
+        <div data-aos="fade-down" className="pb-40 px-6 pt-5">
           <div className="columns-1">
             <p>
               I design and develop services for customers of all sizes,
