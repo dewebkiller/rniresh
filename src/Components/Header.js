@@ -110,7 +110,7 @@ function Header() {
         <div className="md:h-[37rem] h-96">
           <img
             src={nireshshrestha}
-            alt="Logo"
+            alt="Freelance WordPress Developer"
             className="h-full object-cover"
             data-aos="slide-up"
             data-aos-delay="600"

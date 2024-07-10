@@ -16,9 +16,9 @@ function App() {
   return (
   <HelmetProvider>
     <Helmet>
-  <title>Niresh Shrestha | Frontend developer, WordPress Developer| Freelance WordPress Developer Nepal</title>
-  <meta name="description" content="Niresh Shreastha is a skilled frontend developer and WordPress developer with a passion for creating visually stunning and highly functional websites."/>
-  <meta name="keywords" content="Niresh Shrestha, Frontend developer, WordPress Developer, Freelance WordPress Developer Nepal kathmandu, Web Customization Services Kathmandu "/>
+  <title>Niresh Shrestha | Freelance WordPress Developer Nepal | Frontend developer, WordPress Developer </title>
+  <meta name="description" content="Niresh Shreastha is a skilled frontend developer and Freelance WordPress developer with a passion for creating visually stunning and highly functional websites."/>
+  <meta name="keywords" content="Niresh Shrestha, Frontend developer, WordPress Developer, Freelance WordPress Developer Nepal kathmandu, Web Customization Services Kathmandu, Plugin Development "/>
 </Helmet>
     <div className="header">
       <Header />
