@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.80047e8b.css",
-    "main.js": "/static/js/main.ce1f37f1.js",
+    "main.css": "/static/css/main.bd4b86aa.css",
+    "main.js": "/static/js/main.4d6678eb.js",
     "static/media/aaspas.png": "/static/media/aaspas.cee48876b49eb80e9d1a.png",
     "static/media/ubma.png": "/static/media/ubma.01cc24a1ad1ab93c21f0.png",
     "static/media/axis.png": "/static/media/axis.d15c76d375e7d4512a73.png",
@@ -28,12 +28,16 @@
     "static/media/niresh.svg": "/static/media/niresh.d6987ea914a7f22005bd1d1e57e1dcf2.svg",
     "static/media/dots-5.png": "/static/media/dots-5.bfdceb50554332de1485.png",
     "static/media/author.webp": "/static/media/author.c25f7884dc4b426be9dd.webp",
+    "static/media/icon-wordpress.svg": "/static/media/icon-wordpress.e905f036255b4442f99996f3d1317308.svg",
+    "static/media/icon-linkedin.svg": "/static/media/icon-linkedin.c304a4148cde039a54532585f4d47b48.svg",
+    "static/media/icon-github.svg": "/static/media/icon-github.7ff51b2ba4c264a8e5a9bbe13388f0fb.svg",
     "index.html": "/index.html",
-    "main.80047e8b.css.map": "/static/css/main.80047e8b.css.map",
-    "main.ce1f37f1.js.map": "/static/js/main.ce1f37f1.js.map"
+    "static/media/icon-dribbble.svg": "/static/media/icon-dribbble.8e62f2124223cbc022194953b2472146.svg",
+    "main.bd4b86aa.css.map": "/static/css/main.bd4b86aa.css.map",
+    "main.4d6678eb.js.map": "/static/js/main.4d6678eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.80047e8b.css",
-    "static/js/main.ce1f37f1.js"
+    "static/css/main.bd4b86aa.css",
+    "static/js/main.4d6678eb.js"
   ]
 }
