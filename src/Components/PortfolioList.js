@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+import clikman from "../images/portfolio/clikman.png";
+import trekkingactivites from "../images/portfolio/trekking-activities.png";
+import edunyx from "../images/portfolio/edunyx.png";
 import uiubma from "../images/portfolio/ubma.png";
 import techknowcon from "../images/portfolio/techknowcon.png";
 import himalayandirt from "../images/portfolio/himalayan-dirt.png";
@@ -7,15 +11,35 @@ import curryhouse from "../images/portfolio/curryhousenc.png";
 import aaspas from "../images/portfolio/aaspas.png";
 import axisinfosys from "../images/portfolio/axis.png";
 
-
 const imgs = [
+  {
+    author: "Trekking Activites",
+    tag: "Web development",
+    technology: "WordPress: Custom Theme",
+    link: "https://trekkingactivitiesnepal.com/",
+    src: trekkingactivites,
+  },
+  {
+    author: "Clikman Production",
+    tag: "Web development",
+    technology: "Single page",
+    link: "https://www.clikmanproduction.com/",
+    src: clikman,
+  },
+  {
+    author: "Edunyx",
+    tag: "Web development",
+    technology: "WordPress | LMS",
+    link: "https://edunyx.com/",
+    src: edunyx,
+  },
   {
     author: "United Black Mothers of America",
     tag: "Web development",
     technology: "WordPress: Elementor",
     link: "https://unitedblackmothersofamerica.org/",
     src: uiubma,
-  }, 
+  },
   {
     author: "Techknowcon",
     tag: "Web development",
@@ -51,7 +75,6 @@ const imgs = [
     link: "#",
     src: axisinfosys,
   },
-  
 ];
 
 const filters = [
@@ -85,7 +108,9 @@ const Cards = ({ imgs }) => (
           <figcaption>
             <div>{img.author} </div>
             <span>{img.technology}</span>
-            <Link to={img.link} className="btn-capsule" target="_blank">Visit Site → </Link>
+            <Link to={img.link} className="btn-capsule" target="_blank">
+              Visit Site →{" "}
+            </Link>
           </figcaption>
         </figure>
       </li>

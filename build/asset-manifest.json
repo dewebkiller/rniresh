@@ -1,7 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd4b86aa.css",
-    "main.js": "/static/js/main.3af0288e.js",
+    "main.css": "/static/css/main.461ec298.css",
+    "main.js": "/static/js/main.d2a2ee79.js",
+    "static/media/clikman.png": "/static/media/clikman.c85eb115665db1816902.png",
+    "static/media/trekking-activities.png": "/static/media/trekking-activities.29e16464e538b504f66a.png",
+    "static/media/edunyx.png": "/static/media/edunyx.88ac06856100e386f0b2.png",
     "static/media/aaspas.png": "/static/media/aaspas.cee48876b49eb80e9d1a.png",
     "static/media/ubma.png": "/static/media/ubma.01cc24a1ad1ab93c21f0.png",
     "static/media/axis.png": "/static/media/axis.d15c76d375e7d4512a73.png",
@@ -31,13 +34,13 @@
     "static/media/icon-wordpress.svg": "/static/media/icon-wordpress.e905f036255b4442f99996f3d1317308.svg",
     "static/media/icon-linkedin.svg": "/static/media/icon-linkedin.c304a4148cde039a54532585f4d47b48.svg",
     "static/media/icon-github.svg": "/static/media/icon-github.7ff51b2ba4c264a8e5a9bbe13388f0fb.svg",
-    "index.html": "/index.html",
     "static/media/icon-dribbble.svg": "/static/media/icon-dribbble.8e62f2124223cbc022194953b2472146.svg",
-    "main.bd4b86aa.css.map": "/static/css/main.bd4b86aa.css.map",
-    "main.3af0288e.js.map": "/static/js/main.3af0288e.js.map"
+    "index.html": "/index.html",
+    "main.461ec298.css.map": "/static/css/main.461ec298.css.map",
+    "main.d2a2ee79.js.map": "/static/js/main.d2a2ee79.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd4b86aa.css",
-    "static/js/main.3af0288e.js"
+    "static/css/main.461ec298.css",
+    "static/js/main.d2a2ee79.js"
   ]
 }

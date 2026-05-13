@@ -237,7 +237,8 @@ h4 {
   background: #fff;
   padding: 10px;
   border-radius: 50%;
-  box-shadow: 5px 5px 0px 0px rgb(0 0 0 / 0.1),
+  box-shadow:
+    5px 5px 0px 0px rgb(0 0 0 / 0.1),
     -10px 0px 30px 5px rgb(0 0 0 / 0.06);
 }
 @keyframes progress {
@@ -375,7 +376,8 @@ h6 {
 }
 .testimonial-wrapper .swiper-button-prev,
 .testimonial-wrapper .swiper-button-next {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
 }
 .testimonial-wrapper .swiper-button-next:after,
@@ -545,7 +547,7 @@ h6 {
 
 .dwk-portfolio img {
   width: 420px;
-  height: 350px;
+  height: 280px;
   left: 0;
   object-fit: cover;
   border-radius: 20px;
@@ -570,6 +572,7 @@ h6 {
   text-align: center;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -759,14 +762,15 @@ h6 {
   /* background-color: rgba(0,0,0,0.9);
   background: linear-gradient(to right,rgb(232 232 232 / 90%),#f075752e); */
   background-color: hsla(0, 100%, 50%, 1);
-  background-image: radial-gradient(
-      at 40% 20%,
-      hsla(23, 100%, 87%, 0.54) 0px,
-      transparent 50%
-    ),
+  background-image:
+    radial-gradient(at 40% 20%, hsla(23, 100%, 87%, 0.54) 0px, transparent 50%),
     radial-gradient(at 80% 0%, hsla(189, 77%, 80%, 1) 0px, transparent 50%),
     radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
-    radial-gradient(at 80% 50%, hsla(340, 100%, 86%, 0.62) 0px, transparent 50%),
+    radial-gradient(
+      at 80% 50%,
+      hsla(340, 100%, 86%, 0.62) 0px,
+      transparent 50%
+    ),
     radial-gradient(at 0% 100%, hsla(11, 100%, 97%, 1) 0px, transparent 50%),
     radial-gradient(at 80% 100%, hsla(240, 100%, 92%, 1) 0px, transparent 50%),
     radial-gradient(at 0% 0%, hsla(201, 100%, 79%, 1) 0px, transparent 50%);
@@ -852,11 +856,8 @@ h6 {
 }
 .style2-gradient {
   background-color: hsla(340, 0%, 100%, 1);
-  background-image: radial-gradient(
-      at 24% 18%,
-      hsla(218, 76%, 71%, 1) 0px,
-      transparent 50%
-    ),
+  background-image:
+    radial-gradient(at 24% 18%, hsla(218, 76%, 71%, 1) 0px, transparent 50%),
     radial-gradient(at 72% 9%, hsla(223, 75%, 78%, 1) 0px, transparent 50%),
     radial-gradient(at 20% 41%, hsla(179, 79%, 62%, 1) 0px, transparent 50%),
     radial-gradient(at 64% 48%, hsla(274, 72%, 74%, 1) 0px, transparent 50%),

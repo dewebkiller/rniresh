@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import dotimage from "../images/dots-5.png";
 import nireshlogo from "../images/niresh.svg";
@@ -13,6 +13,25 @@ function BlogHeader(props) {
   const { pagetitle } = props;
   const Breadcrumbtextone = props.Breadcrumbtext1;
   const typewriterStrings = props.Typewriter;
+  const [showHeader, setShowHeader] = useState(true);
+  let lastScrollY = window.pageYOffset;
+
+  const handleScroll = () => {
+    if (window.pageYOffset > lastScrollY) {
+      setShowHeader(false);
+    } else {
+      setShowHeader(true);
+    }
+    lastScrollY = window.pageYOffset;
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   useEffect(() => {
     AOS.init(
       {
@@ -24,7 +43,7 @@ function BlogHeader(props) {
     <>
     <header className="overflow-hidden style2-breadcrumb-wrapper">
       <div className="flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
-        <div className="absolute dwk-header-top py-8">
+        <div className={`absolute dwk-header-top py-8 ${showHeader ? 'show' : 'hide'}`}>
         <div className="container md:grid md:grid-cols-12 md:gap-6">
           <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
           <div className="site-logo">
