@@ -62,7 +62,7 @@ function BlogHeader() {
             <div className="container flex flex-wrap mx-auto">
                 <div className="breadcrumb">
                 <Link to={'/'}> <span className="home">Home</span></Link>
-                <Link to={'/Blog'}> <span>Blog</span></Link>
+                <Link to={'/blog'}> <span>Blog</span></Link>
                 <span>Page Title</span>
                 </div>
             </div>

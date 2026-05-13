@@ -24,7 +24,7 @@ export const Hireme = () => {
     <div data-aos="fade-left" className="border-2 border-dark_primary max-w-sm p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem] aos-init aos-animate">
       <p className="leading-7">Experienced WordPress developer proficient in custom theme and plugin development. Let's collaborate to bring your WordPress project to life!</p>
       <br/>
-      <button className="btn bg-dark_primary text-white bg-sky-500/100"><Link to={'/Contact'}>Hire Me</Link></button>
+      <button className="btn bg-dark_primary text-white bg-sky-500/100"><Link to={'/contact'}>Hire Me</Link></button>
       </div>
     </div>
   </div>

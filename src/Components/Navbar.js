@@ -71,17 +71,17 @@ function Navbar(props) {
                   </NavLink>
                 </li>
                 <li>
-                <NavLink to={"/About"} activeClassName="active">
+                <NavLink to={"/about"} activeClassName="active">
                   About
                 </NavLink>
                 </li>
                 <li>
-                <NavLink to={"/Services"} activeClassName="active">
+                <NavLink to={"/services"} activeClassName="active">
                   Services
                 </NavLink>
                 </li>
                 <li>
-                <NavLink to={"/Portfolio"} activeClassName="active">
+                <NavLink to={"/portfolio"} activeClassName="active">
                   Portfolio
                 </NavLink>
                 </li>
@@ -92,7 +92,7 @@ function Navbar(props) {
                 </a>
                 </li>
                 <li>
-                <NavLink to={"/Contact"} activeClassName="active">
+                <NavLink to={"/contact"} activeClassName="active">
                   Contact
                 </NavLink>
                 </li>
