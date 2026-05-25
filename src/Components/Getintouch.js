@@ -45,7 +45,7 @@ const Getintouch = () => {
             {/* Contact info section */}
             <div className="md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-5" data-aos="fade-left">
               <div className="max-w-sm sm:min-w-[22rem] aos-init aos-animate">
-                <h4 className="title" data-aos="fade-down">What’s your story?</h4>
+                <h1 className="title" data-aos="fade-down">Hire a Freelance WordPress Developer in Nepal</h1>
                 <h4 className="subtitle" data-aos="fade-down">Get in touch</h4>
                 <p className="leading-7">Always available for freelancing if the right project comes along. Feel free to contact me.</p>
                 <br />

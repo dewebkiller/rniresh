@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import nireshProfile from "../images/niresh-shrestha-profile.png";
 import InnerHeaderStyle2 from "./InnerHeaderStyle2";
 import Getintouch from "./Getintouch";
 import Footer from "./Footer";
@@ -30,6 +31,35 @@ function Contact(props) {
             name="keywords"
             content="Freelance WordPress Developer Nepal kathmandu, Frontend developer, WordPress Developer, Niresh Shrestha, Web Customization Services Kathmandu, Plugin Development "
           />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              name: "Contact Niresh Shrestha",
+              url: "https://nireshh.com.np/contact",
+              description:
+                "Get in touch with Niresh Shrestha — a freelance WordPress developer and frontend developer based in Kathmandu, Nepal. Available for web development projects.",
+              mainEntity: {
+                "@type": "Person",
+                name: "Niresh Shrestha",
+                url: "https://nireshh.com.np",
+                image: `${window.location.origin}${nireshProfile}`,
+                jobTitle: "Freelance WordPress Developer & Frontend Developer",
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Kathmandu",
+                  addressCountry: "NP",
+                },
+                sameAs: [
+                  "https://www.linkedin.com/in/dewebkiller/",
+                  "https://github.com/dewebkiller",
+                  "https://codepen.io/dewebkiller/",
+                  "https://dribbble.com/dewebkiller/",
+                  "https://youtube.com/@dewebkiller",
+                ],
+              },
+            })}
+          </script>
         </Helmet>
         <InnerHeaderStyle2
           Breadcrumbtext1={breadcrumbText}

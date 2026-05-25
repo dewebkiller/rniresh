@@ -5,7 +5,7 @@ function PortfolioSectionOne(props) {
       <div className="container mx-auto py-20 main-content">
         <div className="md:grid md:grid-cols-12 md:gap-6">
           <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
-            <h4>Some of the amazing works that I have done recently.</h4>
+            <h1>WordPress & Frontend Developer Portfolio – Niresh Shrestha</h1>
           </div>
           <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
             <p>

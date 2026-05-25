@@ -6,7 +6,7 @@ function ServiceSectionOne (props) {
     <div className="md:grid md:grid-cols-12 md:gap-6">
       
         <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
-        <h4>I help businesses curate an influential digital identity.</h4>
+        <h1>Freelance WordPress & Frontend Development Services in Nepal</h1>
         </div>
         <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
         <p>

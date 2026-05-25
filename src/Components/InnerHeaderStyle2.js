@@ -15,8 +15,6 @@ function InnerHeaderStyle2(props) {
   const { pagetitle } = props;
   const Breadcrumbtextone = props.Breadcrumbtext1;
   const Breadcrumbtexttwo = props.Breadcrumbtext2;
-  const firstword = props.Word1;
-  const secondtword = props.Word2;
   const typewriterStrings = props.Typewriter;
   const [showHeader, setShowHeader] = useState(true);
   let lastScrollY = window.pageYOffset;
@@ -114,14 +112,7 @@ function InnerHeaderStyle2(props) {
                 data-aos="slide-left"
                 data-aos-delay="1200"
                 className="absolute h-1/2 md:w-4/12 w-8/12 top-0 right-0 bg-primaryLinear -z-10 s2-breadcrumb-border"
-              >
-                <h1 className="rotate-90 absolute rotate-90 absolute top-[40%] right-[-15%] text-[#EAF2FA]">
-                  <Word1 Word1={firstword} />{" "}
-                  <span className="text-dark_primary">
-                    <Word2 Word2={secondtword} />
-                  </span>
-                </h1>
-              </div>
+              ></div>
             </div>
           </div>
         </div>
