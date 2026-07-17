@@ -243,6 +243,12 @@ h4 {
   line-height: 2.25rem;
   line-height: 1.625 !important;
 }
+h5,
+.heading5 {
+  font-family: "Paprika", cursive;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
 /* Progress Bar */
 .dwk-progressbar {
   position: relative;

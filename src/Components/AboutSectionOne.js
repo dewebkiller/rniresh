@@ -15,7 +15,7 @@ function AboutSectionOne(props) {
             </h1>
             <h3 className="text-2xl text-[#ef6c98] ">
               {" "}
-              Freelance WordPress Developer and complex problem solver
+              Freelance WordPress Developer and complex problem solver.
             </h3>
           </div>
           <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">

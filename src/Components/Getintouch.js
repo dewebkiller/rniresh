@@ -1,10 +1,16 @@
 import React, { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapLocationDot, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMapLocationDot,
+  faMobileAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const Getintouch = () => {
+  const postal_address = "kathmandu, Nepal";
+  const email_address = "hello.niresh@gmail.com";
+  const phone_number = "9841786680";
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const subjectRef = useRef(null);
@@ -19,7 +25,7 @@ const Getintouch = () => {
     e.preventDefault();
     const serviceId = "service_eee1e1v"; // Replace with your EmailJS service ID
     const templateId = "template_gzqy8hp"; // Replace with your EmailJS template ID
-    
+
     try {
       setLoading(true);
       await emailjs.send(serviceId, templateId, {
@@ -27,7 +33,7 @@ const Getintouch = () => {
         user_email: emailRef.current.value,
         user_subject: subjectRef.current.value,
         user_message: messageRef.current.value,
-        recipient: 'dewebkiller@gmail.com'
+        recipient: "hello.niresh@gmail.com",
       });
       alert("Email successfully sent! Please check your inbox.");
     } catch (error) {
@@ -43,17 +49,37 @@ const Getintouch = () => {
         <div className="px-5 pt-20 pb-20">
           <div className="md:grid md:grid-cols-12 md:gap-6">
             {/* Contact info section */}
-            <div className="md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-5" data-aos="fade-left">
+            <div
+              className="md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-5"
+              data-aos="fade-left"
+            >
               <div className="max-w-sm sm:min-w-[22rem] aos-init aos-animate">
-                <h1 className="title" data-aos="fade-down">Hire a Freelance WordPress Developer in Nepal</h1>
-                <h4 className="subtitle" data-aos="fade-down">Get in touch</h4>
-                <p className="leading-7">Always available for freelancing if the right project comes along. Feel free to contact me.</p>
+                <h2 className="heading5 subtitle" data-aos="fade-down">
+                  Hire a Freelance WordPress Developer in Nepal
+                </h2>
+                <p className="leading-7">
+                  I am a freelance WordPress developer and complex problem
+                  solver, always available for new work. Feel free to contact
+                  me.
+                </p>
                 <br />
                 {/* Contact info */}
                 <div className="contact-info-wrapper">
-                  <ContactInfo icon={faMapLocationDot} label="Address" details="Thankot, Kathmandu" />
-                  <ContactInfo icon={faEnvelope} label="Email" details="dewebkiller@gmail.com" />
-                  <ContactInfo icon={faMobileAlt} label="Phone" details="9841786680" />
+                  <ContactInfo
+                    icon={faMapLocationDot}
+                    label="Address"
+                    details={postal_address}
+                  />
+                  <ContactInfo
+                    icon={faEnvelope}
+                    label="Email"
+                    details={email_address}
+                  />
+                  <ContactInfo
+                    icon={faMobileAlt}
+                    label="Phone"
+                    details={phone_number}
+                  />
                 </div>
               </div>
             </div>
@@ -61,30 +87,59 @@ const Getintouch = () => {
             <div className="md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-7">
               <div className="text-left md:grid md:grid-cols-12 md:gap-6">
                 <div className="md:max-w-none md:w-full md:col-span-5 lg:col-span-12 md:col-span-12 lg:col-span-12">
-                  <h4 className="subtitle" data-aos="fade-down">Say something</h4>
+                  <h4 className="subtitle" data-aos="fade-down">
+                    Say Hello
+                  </h4>
                   <div className="formwrapper">
                     <form onSubmit={handleSubmit} id="Contactform">
                       <div className="md:grid md:grid-cols-12 md:gap-6 mt-5 mb-5 ">
                         <div className="lg:col-span-6 md:col-span-6 lg:col-span-6 ">
-                          <input type="text" placeholder="Full Name" name="full_name" className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40" ref={nameRef} />
+                          <input
+                            type="text"
+                            placeholder="Full Name"
+                            name="full_name"
+                            className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                            ref={nameRef}
+                          />
                         </div>
                         <div className="lg:col-span-6 md:col-span-6 lg:col-span-6">
-                          <input type="email" placeholder="Email" name="user_email" className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40" ref={emailRef} />
+                          <input
+                            type="email"
+                            placeholder="Email"
+                            name="user_email"
+                            className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                            ref={emailRef}
+                          />
                         </div>
                       </div>
                       <div className="md:grid md:grid-cols-12 md:gap-6 mt-5 mb-5 ">
                         <div className="lg:col-span-12 md:col-span-12 lg:col-span-12">
-                          <input type="text" placeholder="Subject" name="user_subject" className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40" ref={subjectRef}/>
+                          <input
+                            type="text"
+                            placeholder="Subject"
+                            name="user_subject"
+                            className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                            ref={subjectRef}
+                          />
                         </div>
                       </div>
                       <div className="md:grid md:grid-cols-12 md:gap-6 mt-5 mb-5 ">
                         <div className="lg:col-span-12 md:col-span-12 lg:col-span-12">
-                          <textarea placeholder="Message" name="user_message" rows={8} className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40" ref={messageRef}/>
+                          <textarea
+                            placeholder="Message"
+                            name="user_message"
+                            rows={8}
+                            className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                            ref={messageRef}
+                          />
                         </div>
                       </div>
                       <div className="md:grid md:grid-cols-12 md:gap-6 mt-5 mb-5 ">
                         <div className="lg:col-span-12 md:col-span-12 lg:col-span-12">
-                          <button className="btn bg-dark_primary text-white bg-sky-500/100" disabled={loading}>
+                          <button
+                            className="btn bg-dark_primary text-white bg-sky-500/100"
+                            disabled={loading}
+                          >
                             {loading ? "Sending..." : "Send Message"}
                           </button>
                         </div>
@@ -103,7 +158,11 @@ const Getintouch = () => {
 
 // ContactInfo component
 const ContactInfo = ({ icon, label, details }) => (
-  <div className="md:grid md:grid-cols-12 bg-white shadow-3xl rounded-2xl p-5 mt-5 mb-5 items-center" data-aos="fade-right" data-aos-delay="200">
+  <div
+    className="md:grid md:grid-cols-12 bg-white shadow-3xl rounded-2xl p-5 mt-5 mb-5 items-center"
+    data-aos="fade-right"
+    data-aos-delay="200"
+  >
     <div className="justify-center  overflow-hidden bg-white md:col-span-3 lg:col-span-3 g-touch-icon-wrapper">
       <div className="g-touch-icon">
         <FontAwesomeIcon icon={icon} />
