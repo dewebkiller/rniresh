@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import dotimage from "../images/dots-5.png";
 import nireshlogo from "../images/niresh.svg";
 import AOS from "aos";
@@ -17,29 +19,33 @@ function InnerHeaderStyle2(props) {
   const Breadcrumbtexttwo = props.Breadcrumbtext2;
   const typewriterStrings = props.Typewriter;
   const [showHeader, setShowHeader] = useState(true);
-  let lastScrollY = window.pageYOffset;
-
-  const handleScroll = () => {
-    if (window.pageYOffset > lastScrollY) {
-      setShowHeader(false);
-    } else {
-      setShowHeader(true);
-    }
-    lastScrollY = window.pageYOffset;
-  };
 
   useEffect(() => {
+    let lastScrollY = typeof window !== "undefined" ? window.pageYOffset : 0;
+    const handleScroll = () => {
+      if (window.pageYOffset > lastScrollY) {
+        setShowHeader(false);
+      } else {
+        setShowHeader(true);
+      }
+      lastScrollY = window.pageYOffset;
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, []);
 
   useEffect(() => {
     AOS.init({
       disable: "mobile",
     });
   }, []);
+
+  const logoSrc = typeof nireshlogo === 'string' ? nireshlogo : nireshlogo.src;
+  const dotSrc = typeof dotimage === 'string' ? dotimage : dotimage.src;
+
   return (
     <header className="overflow-hidden style2-breadcrumb-wrapper">
       <div className="flex md:flex-row flex-col-reverse md:items-end justify-center items-center">
@@ -50,7 +56,7 @@ function InnerHeaderStyle2(props) {
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 logo-wrapper">
               <div className="site-logo">
                 <img
-                  src={nireshlogo}
+                  src={logoSrc}
                   alt="Logo"
                   className="h-full object-cover"
                   data-aos="fade-down"
@@ -85,7 +91,7 @@ function InnerHeaderStyle2(props) {
                   <div className="breadcrumbs breadcrumb-style2  bg-primaryLinear">
                     <div className="container flex flex-wrap mx-auto">
                       <div className="breadcrumb">
-                        <Link to={"/"}>
+                        <Link href={"/"}>
                           {" "}
                           <span className="home">Home</span>
                         </Link>
@@ -101,7 +107,7 @@ function InnerHeaderStyle2(props) {
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 z-50">
               <div className="flex flex-col gap-10 mt-10 style2-centerimage">
                 <img
-                  src={dotimage}
+                  src={dotSrc}
                   alt=""
                   className="h-full object-cover"
                   data-aos="slide-up"

@@ -1,9 +1,13 @@
+'use client';
+
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function Navbar(props) {
   const dewebkiller = "https://dewebkiller.com";
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -65,36 +69,36 @@ function Navbar(props) {
               id="navbar-default"
             >
               <ul className="flex flex-col font-medium mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-              <li>
-                  <NavLink to={"/"} activeClassName="active">
+                <li>
+                  <Link href={"/"} className={pathname === "/" ? "active" : ""}>
                     Home
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
-                <NavLink to={"/about"} activeClassName="active">
-                  About
-                </NavLink>
+                  <Link href={"/about"} className={pathname === "/about" ? "active" : ""}>
+                    About
+                  </Link>
                 </li>
                 <li>
-                <NavLink to={"/services"} activeClassName="active">
-                  Services
-                </NavLink>
+                  <Link href={"/services"} className={pathname === "/services" ? "active" : ""}>
+                    Services
+                  </Link>
                 </li>
                 <li>
-                <NavLink to={"/portfolio"} activeClassName="active">
-                  Portfolio
-                </NavLink>
+                  <Link href={"/portfolio"} className={pathname === "/portfolio" ? "active" : ""}>
+                    Portfolio
+                  </Link>
                 </li>
                 
                 <li>
                   <a href={dewebkiller} target="_blank" rel="noreferrer">
-                  Blog
-                </a>
+                    Blog
+                  </a>
                 </li>
                 <li>
-                <NavLink to={"/contact"} activeClassName="active">
-                  Contact
-                </NavLink>
+                  <Link href={"/contact"} className={pathname === "/contact" ? "active" : ""}>
+                    Contact
+                  </Link>
                 </li>
                 
               </ul>

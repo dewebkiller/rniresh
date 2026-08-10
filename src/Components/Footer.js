@@ -1,6 +1,7 @@
+'use client';
+
 import React from "react";
 import Tooltip from "@mui/material/Tooltip";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -29,52 +30,52 @@ function Footer() {
           <ul className="flex gap-5 justify-center mb-3 social-icons">
             <li>
               <Tooltip title="Facebook" arrow placement="top">
-                <Link to={facebook} target="_blank">
+                <a href={facebook} target="_blank" rel="noreferrer">
                   <FontAwesomeIcon icon={["fab", "facebook-f"]} />
-                </Link>
+                </a>
               </Tooltip>
             </li>
             <li>
               <Tooltip title="Instagram" arrow placement="top">
-                <Link to={instagram} target="_blank">
-                <FontAwesomeIcon icon="fa-brands fa-instagram" />
-                </Link>
+                <a href={instagram} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon="fa-brands fa-instagram" />
+                </a>
               </Tooltip>
             </li>
             
             <li>
-            <Tooltip title="Linkedin" arrow placement="top">
-                <Link to={linkedin} target="_blank">
-                <FontAwesomeIcon icon="fa-brands fa-linkedin" />
-                </Link>
+              <Tooltip title="Linkedin" arrow placement="top">
+                <a href={linkedin} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                </a>
               </Tooltip>  
             </li>
             <li>
-            <Tooltip title="Github" arrow placement="top">
-                <Link to={github} target="_blank">
-                <FontAwesomeIcon icon="fa-brands fa-github" />
-                </Link>
+              <Tooltip title="Github" arrow placement="top">
+                <a href={github} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon="fa-brands fa-github" />
+                </a>
               </Tooltip>
             </li>
             <li>
-            <Tooltip title="X / Twitter" arrow placement="top">
-                <Link to={twitter} target="_blank">
-                <FontAwesomeIcon icon="fa-brands fa-x-twitter" />
-                </Link>
+              <Tooltip title="X / Twitter" arrow placement="top">
+                <a href={twitter} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon="fa-brands fa-x-twitter" />
+                </a>
               </Tooltip>
             </li>
             <li>
-            <Tooltip title="Dribble" arrow placement="top">
-                <Link to={dribble} target="_blank">
-                <FontAwesomeIcon icon="fa-brands fa-dribbble" />
-                </Link>
+              <Tooltip title="Dribble" arrow placement="top">
+                <a href={dribble} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon="fa-brands fa-dribbble" />
+                </a>
               </Tooltip>
             </li>
             <li>
-            <Tooltip title="WordPress" arrow placement="top">
-                <Link to={wordpress} target="_blank">
-                <FontAwesomeIcon icon="fa-brands fa-wordpress" />
-                </Link>
+              <Tooltip title="WordPress" arrow placement="top">
+                <a href={wordpress} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon="fa-brands fa-wordpress" />
+                </a>
               </Tooltip>
             </li>
             

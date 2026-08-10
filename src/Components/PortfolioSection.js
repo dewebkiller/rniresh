@@ -1,5 +1,7 @@
+'use client';
+
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 const imgs = [
   {
     author: "The Lazy Artist Gallery",
@@ -61,12 +63,12 @@ const Filters = ({ onClickAll, all, onClick, filters }) => (
   <form>
     <ul>
       <li onClick={onClickAll}>
-        <input type="checkbox" checked={all} />
+        <input type="checkbox" checked={all} readOnly />
         <label htmlFor="all">All</label>
       </li>
       {filters.map((filter, i) => (
         <li key={i} data-index={i} onClick={onClick}>
-          <input id={filter.name} type="checkbox" checked={filter.status} />
+          <input id={filter.name} type="checkbox" checked={filter.status} readOnly />
           <label htmlFor={filter.name}>{filter.name}</label>
         </li>
       ))}
@@ -83,7 +85,7 @@ const Cards = ({ imgs }) => (
           <figcaption>
             <div>{img.author} </div>
             <span>{img.tag}</span>
-            <Link to={img.link}>Visit Site</Link>
+            <a href={img.link} target="_blank" rel="noreferrer">Visit Site</a>
           </figcaption>
         </figure>
       </li>

@@ -1,5 +1,7 @@
+'use client';
+
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 import clikman from "../images/portfolio/clikman.png";
 import trekkingactivites from "../images/portfolio/trekking-activities.png";
@@ -13,6 +15,8 @@ import axisinfosys from "../images/portfolio/axis.png";
 import gssadvisor from "../images/portfolio/gss-advisor.png";
 import abcd from "../images/portfolio/abcd.png";
 import art3d from "../images/portfolio/3dart.png";
+
+const getSrc = (img) => typeof img === 'string' ? img : (img?.src || img);
 
 const imgs = [
   {
@@ -110,12 +114,12 @@ const Filters = ({ onClickAll, all, onClick, filters }) => (
   <form>
     <ul>
       <li onClick={onClickAll}>
-        <input type="checkbox" checked={all} />
+        <input type="checkbox" checked={all} readOnly />
         <label htmlFor="all">All</label>
       </li>
       {filters.map((filter, i) => (
         <li key={i} data-index={i} onClick={onClick}>
-          <input id={filter.name} type="checkbox" checked={filter.status} />
+          <input id={filter.name} type="checkbox" checked={filter.status} readOnly />
           <label htmlFor={filter.name}>{filter.name}</label>
         </li>
       ))}
@@ -128,13 +132,13 @@ const Cards = ({ imgs }) => (
     {imgs.map((img, i) => (
       <li key={i}>
         <figure>
-          <img src={img.src} alt={img.author} />
+          <img src={getSrc(img.src)} alt={img.author} />
           <figcaption>
             <div>{img.author} </div>
             <span>{img.technology}</span>
-            <Link to={img.link} className="btn-capsule" target="_blank">
+            <a href={img.link} className="btn-capsule" target="_blank" rel="noreferrer">
               Visit Site →{" "}
-            </Link>
+            </a>
           </figcaption>
         </figure>
       </li>

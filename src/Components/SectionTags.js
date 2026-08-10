@@ -1,5 +1,5 @@
 import React  from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 function SectionTags (props) {
   return (
     <>
@@ -8,17 +8,17 @@ function SectionTags (props) {
       
     <ul className="flex ul-tags gap-5">
           <li>
-            <Link to={"/"}>Web development</Link>
+            <Link href={"/"}>Web development</Link>
           </li>
           <li>
-            <Link to={"/"}>Web design</Link>
-            </li>
+            <Link href={"/"}>Web design</Link>
+          </li>
             
           <li>
-          <Link to={"/"}>Open AI</Link>
+            <Link href={"/"}>Open AI</Link>
           </li>
           <li>
-          <Link to={"/"}>ChatGPT</Link>
+            <Link href={"/"}>ChatGPT</Link>
           </li>
         </ul>
       </div>

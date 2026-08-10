@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import dotimage from "../images/dots-5.png";
 import nireshlogo from "../images/niresh.svg";
 import AOS from "aos";
@@ -9,28 +11,30 @@ import Breadcrumbtext1 from "./Breadcrumbtext1";
 import Typewriter from "typewriter-effect";
 import Navbar from "./Navbar";
 
+const getSrc = (img) => typeof img === 'string' ? img : (img?.src || img);
+
 function BlogHeader(props) {
   const { pagetitle } = props;
   const Breadcrumbtextone = props.Breadcrumbtext1;
   const typewriterStrings = props.Typewriter;
   const [showHeader, setShowHeader] = useState(true);
-  let lastScrollY = window.pageYOffset;
-
-  const handleScroll = () => {
-    if (window.pageYOffset > lastScrollY) {
-      setShowHeader(false);
-    } else {
-      setShowHeader(true);
-    }
-    lastScrollY = window.pageYOffset;
-  };
 
   useEffect(() => {
+    let lastScrollY = typeof window !== "undefined" ? window.pageYOffset : 0;
+    const handleScroll = () => {
+      if (window.pageYOffset > lastScrollY) {
+        setShowHeader(false);
+      } else {
+        setShowHeader(true);
+      }
+      lastScrollY = window.pageYOffset;
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, []);
 
   useEffect(() => {
     AOS.init(
@@ -48,7 +52,7 @@ function BlogHeader(props) {
           <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
           <div className="site-logo">
             <img
-            src={nireshlogo}
+            src={getSrc(nireshlogo)}
             alt="Logo"
             className="h-full object-cover"
             data-aos="fade-down"
@@ -85,8 +89,8 @@ function BlogHeader(props) {
           <div className="breadcrumbs breadcrumb-style2  bg-primaryLinear">
             <div className="container flex flex-wrap mx-auto">
                 <div className="breadcrumb">
-                <Link to={'/'}> <span className="home">Home</span></Link>
-                <Link to={'/blog'}> <span>Blog</span></Link>
+                <Link href={'/'}> <span className="home">Home</span></Link>
+                <Link href={'/blog'}> <span>Blog</span></Link>
                 <span>{pagetitle}</span>
                 </div>
             </div>
@@ -99,7 +103,7 @@ function BlogHeader(props) {
         </div>
         <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-5 z-50">
         <div className="flex flex-col gap-10 mt-10 style2-centerimage">
-            <img src={dotimage} alt="" className="h-full object-cover"
+            <img src={getSrc(dotimage)} alt="" className="h-full object-cover"
             data-aos="slide-up"
             data-aos-delay="600"/>
           </div>

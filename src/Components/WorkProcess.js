@@ -1,11 +1,18 @@
+'use client';
+
 import React, { useEffect } from "react";
 import AOS from "aos";
-import { Player } from "@lottiefiles/react-lottie-player";
+import dynamic from "next/dynamic";
 import idea from "../lottie/idea.json";
 import design from "../lottie/design.json";
 import develop from "../lottie/develop.json";
 import testing from "../lottie/testing.json";
 import launch from "../lottie/launch.json";
+
+const Player = dynamic(
+  () => import("@lottiefiles/react-lottie-player").then((mod) => mod.Player),
+  { ssr: false }
+);
 function WorkProcess(props) {
   useEffect(() => {
     AOS.init(

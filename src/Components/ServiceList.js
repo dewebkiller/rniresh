@@ -1,17 +1,34 @@
+'use client';
+
 import React, { useEffect } from "react";
 import AOS from "aos";
-import wordpressdevelopment from  "../images/thumbnail-wordpress-development.jpg";
-import woocommercedevelopment from "../images/thumbnail-woocommerce-development.jpg";
-import webdesign from "../images/webdesign.jpg";
-import graphicdesign from "../images/graphicdesign.jpg";
-import contentwritting from "../images/content-writing.jpg";
-import uiux from "../images/ui-ux.jpg";
-import wordpressdevelopmenticon from  "../images/wordpress.png";
-import woocommerceicon from "../images/woocommerce.png";
-import webdesignicon from "../images/web-design-icon.png";
-import  graphicdesignicon from "../images/graphic-design-icon.png";
-import uiixicon from "../images/ui-ux-icon.png";
-import contentwrittingicon from "../images/content-writting-icon.png";
+import wordpressdevelopmentImport from  "../images/thumbnail-wordpress-development.jpg";
+import woocommercedevelopmentImport from "../images/thumbnail-woocommerce-development.jpg";
+import webdesignImport from "../images/webdesign.jpg";
+import graphicdesignImport from "../images/graphicdesign.jpg";
+import contentwrittingImport from "../images/content-writing.jpg";
+import uiuxImport from "../images/ui-ux.jpg";
+import wordpressdevelopmenticonImport from  "../images/wordpress.png";
+import woocommerceiconImport from "../images/woocommerce.png";
+import webdesigniconImport from "../images/web-design-icon.png";
+import graphicdesigniconImport from "../images/graphic-design-icon.png";
+import uiixiconImport from "../images/ui-ux-icon.png";
+import contentwrittingiconImport from "../images/content-writting-icon.png";
+
+const getSrc = (img) => typeof img === 'string' ? img : (img?.src || img);
+
+const wordpressdevelopment = getSrc(wordpressdevelopmentImport);
+const woocommercedevelopment = getSrc(woocommercedevelopmentImport);
+const webdesign = getSrc(webdesignImport);
+const graphicdesign = getSrc(graphicdesignImport);
+const contentwritting = getSrc(contentwrittingImport);
+const uiux = getSrc(uiuxImport);
+const wordpressdevelopmenticon = getSrc(wordpressdevelopmenticonImport);
+const woocommerceicon = getSrc(woocommerceiconImport);
+const webdesignicon = getSrc(webdesigniconImport);
+const graphicdesignicon = getSrc(graphicdesigniconImport);
+const uiixicon = getSrc(uiixiconImport);
+const contentwrittingicon = getSrc(contentwrittingiconImport);
 function ServiceList(props) {
   useEffect(() => {
     AOS.init(

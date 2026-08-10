@@ -1,5 +1,5 @@
 import React  from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 function BlogExcerpt (props) {
   return (
     <>
@@ -14,7 +14,7 @@ function BlogExcerpt (props) {
             data-aos-delay="300"
             className="bg-white border rounded-lg shadow md:col-span-4 lg:col-span-4"
           >
-            <Link to={'/'}>
+            <Link href={'/'}>
               <img
                 className="rounded-t-lg"
                 src="https://flowbite.com/docs/images/blog/image-1.jpg"
@@ -23,7 +23,7 @@ function BlogExcerpt (props) {
             </Link>
             <div className="p-2">
               
-            <Link to={'/'} >
+            <Link href={'/'} >
                 <h6 className="font-bold">
                   Noteworthy technology acquisitions 2021
                 </h6>
@@ -38,7 +38,7 @@ function BlogExcerpt (props) {
             data-aos-delay="300"
             className="bg-white border rounded-lg shadow md:col-span-4 lg:col-span-4"
           >
-            <Link to={'/'}>
+            <Link href={'/'}>
               <img
                 className="rounded-t-lg"
                 src="https://flowbite.com/docs/images/blog/image-1.jpg"
@@ -47,7 +47,7 @@ function BlogExcerpt (props) {
             </Link>
             <div className="p-2">
               
-            <Link to={'/'} >
+            <Link href={'/'} >
                 <h6 className="font-bold">
                   Noteworthy technology acquisitions 2021
                 </h6>
@@ -62,7 +62,7 @@ function BlogExcerpt (props) {
             data-aos-delay="300"
             className="bg-white border rounded-lg shadow md:col-span-4 lg:col-span-4"
           >
-            <Link to={'/'}>
+            <Link href={'/'}>
               <img
                 className="rounded-t-lg"
                 src="https://flowbite.com/docs/images/blog/image-1.jpg"
@@ -71,7 +71,7 @@ function BlogExcerpt (props) {
             </Link>
             <div className="p-2">
               
-            <Link to={'/'} >
+            <Link href={'/'} >
                 <h6 className="font-bold">
                   Noteworthy technology acquisitions 2021
                 </h6>
@@ -85,7 +85,7 @@ function BlogExcerpt (props) {
             data-aos-delay="300"
             className="bg-white border rounded-lg shadow md:col-span-4 lg:col-span-4"
           >
-            <Link to={'/'}>
+            <Link href={'/'}>
               <img
                 className="rounded-t-lg"
                 src="https://flowbite.com/docs/images/blog/image-1.jpg"
@@ -94,7 +94,7 @@ function BlogExcerpt (props) {
             </Link>
             <div className="p-2">
               
-            <Link to={'/'} >
+            <Link href={'/'} >
                 <h6 className="font-bold">
                   Noteworthy technology acquisitions 2021
                 </h6>

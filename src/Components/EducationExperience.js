@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect } from "react";
 import AOS from "aos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -1,6 +1,7 @@
+'use client';
+
 import React, { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Helmet } from "react-helmet-async";
 
 const ContactUs = () => {
   const nameRef = useRef(null);
@@ -37,19 +38,6 @@ const ContactUs = () => {
 
   return (
     <>
-      <Helmet>
-        <title>
-          Contact Us | Freelance WordPress Developer Nepal | WordPress Developer | Niresh Shrestha
-        </title>
-        <meta
-          name="description"
-          content="Get in touch with Niresh Shrestha, a skilled freelance WordPress developer from Nepal, for web customization services and plugin development."
-        />
-        <meta
-          name="keywords"
-          content="Contact, Freelance WordPress Developer Nepal kathmandu, Frontend developer, WordPress Developer, Niresh Shrestha, Web Customization Services Kathmandu, Plugin Development"
-        />
-      </Helmet>
       <section className="min-h-fit bg-bg_light_primary getintouch-section">
       <div className="container mx-auto">
         <div className="px-5 pt-20 pb-20">

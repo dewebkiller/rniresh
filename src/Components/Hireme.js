@@ -1,6 +1,11 @@
 
+'use client';
+
+import React from "react";
 import nireshhire from "../images/niresh-hireme.png";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+
+const getSrc = (img) => typeof img === 'string' ? img : (img?.src || img);
 
 export const Hireme = () => {
   return (
@@ -15,7 +20,7 @@ export const Hireme = () => {
           <h4 className="subtitle" data-aos="fade-down">For your project</h4>
       </div>
           <div className="right-image md:col-span-7 lg:col-span-7">
-          <img src={nireshhire} alt="My Skills" className="h-full object-cover" data-aos="fade-left" width="70%"/> 
+          <img src={getSrc(nireshhire)} alt="My Skills" className="h-full object-cover" data-aos="fade-left" width="70%"/> 
           </div>
           
         </div>
@@ -24,7 +29,7 @@ export const Hireme = () => {
     <div data-aos="fade-left" className="border-2 border-dark_primary max-w-sm p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem] aos-init aos-animate">
       <p className="leading-7">Experienced WordPress developer proficient in custom theme and plugin development. Let's collaborate to bring your WordPress project to life!</p>
       <br/>
-      <button className="btn bg-dark_primary text-white bg-sky-500/100"><Link to={'/contact'}>Hire Me</Link></button>
+      <button className="btn bg-dark_primary text-white bg-sky-500/100"><Link href={'/contact'}>Hire Me</Link></button>
       </div>
     </div>
   </div>

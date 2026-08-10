@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect } from "react";
 import AOS from "aos";
 import Accordion from '@mui/material/Accordion';
@@ -5,7 +7,10 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import nireshwepdev from "../images/niresh-shrestha-wpdeveloper.png";
+import nireshwepdevImport from "../images/niresh-shrestha-wpdeveloper.png";
+
+const getSrc = (img) => typeof img === 'string' ? img : (img?.src || img);
+const nireshwepdev = getSrc(nireshwepdevImport);
 
 function FAQ(props) {
   useEffect(() => {

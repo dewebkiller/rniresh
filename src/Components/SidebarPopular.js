@@ -2,6 +2,8 @@ import React from "react";
 import Thumbnail from "../images/blogsingle.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-regular-svg-icons";
+
+const getSrc = (img) => typeof img === 'string' ? img : (img?.src || img);
 function SidebarPopular() {
   return (
     <>

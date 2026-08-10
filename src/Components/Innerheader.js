@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import nireshlogo from "../images/niresh.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -8,6 +10,8 @@ import ButtonComp from  './ButtonComp';
 import Breadcrumbtext1 from "./Breadcrumbtext1";
 import Breadcrumbtext2 from "./Breadcrumbtext2";
 import Typewriter from "typewriter-effect";
+
+const getSrc = (img) => typeof img === 'string' ? img : (img?.src || img);
 
 function InnerHeader(props) {
   const { pagetitle } = props;
@@ -38,7 +42,7 @@ function InnerHeader(props) {
       <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 logo-wrapper">
       <div className="site-logo">
             <img
-            src={nireshlogo}
+            src={getSrc(nireshlogo)}
             alt="Logo"
             className="h-full object-cover"
             data-aos="fade-down"
@@ -79,7 +83,7 @@ function InnerHeader(props) {
         <div className="breadcrumbs ">
             <div className="container flex flex-wrap mx-auto">
                 <div className="breadcrumb">
-                <Link to={'/'}> <span className="home">Home</span></Link>
+                <Link href={'/'}> <span className="home">Home</span></Link>
                     <span><span>{pagetitle}</span></span>
                 </div>
             </div>

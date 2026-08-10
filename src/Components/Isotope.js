@@ -1,17 +1,13 @@
+'use client';
+
 import React from "react";
-import $ from "jquery";
-//import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import Script from "next/script";
 
 function Isotope() {
   return (
     <>
       <h1>Isotope - filtering with radio inputs</h1>
-      <Helmet>
-        <script  src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js" type="text/javascript"
-        ></script>
-        
-      </Helmet>
+      <Script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js" strategy="afterInteractive" />
       <p className="filters">
         <label>
           <input type="radio" name="filter" value="*" checked="checked" /> show

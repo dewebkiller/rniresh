@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.444ebf92.css",
-    "main.js": "/static/js/main.83a14369.js",
-    "static/media/clikman.png": "/static/media/clikman.c85eb115665db1816902.png",
-    "static/media/trekking-activities.png": "/static/media/trekking-activities.29e16464e538b504f66a.png",
-    "static/media/edunyx.png": "/static/media/edunyx.88ac06856100e386f0b2.png",
-    "static/media/aaspas.png": "/static/media/aaspas.cee48876b49eb80e9d1a.png",
-    "static/media/ubma.png": "/static/media/ubma.01cc24a1ad1ab93c21f0.png",
-    "static/media/axis.png": "/static/media/axis.d15c76d375e7d4512a73.png",
-    "static/media/curryhousenc.png": "/static/media/curryhousenc.faf20117fad9e18f6f82.png",
+    "main.css": "/static/css/main.8868d30c.css",
+    "main.js": "/static/js/main.0eb8e9e6.js",
+    "static/media/trekking-activities.png": "/static/media/trekking-activities.188077e9cffef96c7a58.png",
+    "static/media/clikman.png": "/static/media/clikman.a76d91a6513f25237456.png",
+    "static/media/edunyx.png": "/static/media/edunyx.2145d4e65c4c8682bcab.png",
+    "static/media/aaspas.png": "/static/media/aaspas.d8af60a1b2304d52deef.png",
     "static/media/niresh-testimonials.png": "/static/media/niresh-testimonials.88c30c64fd04c676566c.png",
     "static/media/thumbnail-wordpress-development.jpg": "/static/media/thumbnail-wordpress-development.98910dd1ec582c56a3f6.jpg",
-    "static/media/abcd.png": "/static/media/abcd.0a4c9ea9584d5e4e1a75.png",
-    "static/media/himalayan-dirt.png": "/static/media/himalayan-dirt.e4133159272fd5090932.png",
     "static/media/blogsingle.jpeg": "/static/media/blogsingle.0967324b4f8e52444ccd.jpeg",
-    "static/media/3dart.png": "/static/media/3dart.8d570446b3eb58f3471c.png",
-    "static/media/gss-advisor.png": "/static/media/gss-advisor.269f74ed62d403aad5f1.png",
     "static/media/niresh-shrestha-wpdeveloper.png": "/static/media/niresh-shrestha-wpdeveloper.fa4201ac721efdb54833.png",
     "static/media/niresh-shrestha-profile.png": "/static/media/niresh-shrestha-profile.453cc1d8a5cc7b763972.png",
     "static/media/niresh-hireme.png": "/static/media/niresh-hireme.d4bd5a6c1fb4233336b2.png",
-    "static/media/techknowcon.png": "/static/media/techknowcon.93ead2fd5526358214e3.png",
+    "static/media/axis.png": "/static/media/axis.ff3a72ecb8a3ef117571.png",
+    "static/media/ubma.png": "/static/media/ubma.eeca3f47c93656c0046d.png",
+    "static/media/curryhousenc.png": "/static/media/curryhousenc.9a4c8a2ecb3271cee4d2.png",
+    "static/media/abcd.png": "/static/media/abcd.66ac6b5724cfd4cda381.png",
+    "static/media/3dart.png": "/static/media/3dart.56fc5dca0b61239ff434.png",
+    "static/media/himalayan-dirt.png": "/static/media/himalayan-dirt.79cf54f55ffe9c214e50.png",
+    "static/media/gss-advisor.png": "/static/media/gss-advisor.36deff8bd411c51a5dc5.png",
+    "static/media/techknowcon.png": "/static/media/techknowcon.286e7e86ec29a35f8b28.png",
     "static/media/graphicdesign.jpg": "/static/media/graphicdesign.e42093319c752b19f1c4.jpg",
     "static/media/content-writing.jpg": "/static/media/content-writing.414fb5b15d594a587011.jpg",
     "static/media/ui-ux.jpg": "/static/media/ui-ux.a8a58c47e92a4e2580e6.jpg",
@@ -36,11 +36,11 @@
     "static/media/icon-github.svg": "/static/media/icon-github.7ff51b2ba4c264a8e5a9bbe13388f0fb.svg",
     "index.html": "/index.html",
     "static/media/icon-dribbble.svg": "/static/media/icon-dribbble.8e62f2124223cbc022194953b2472146.svg",
-    "main.444ebf92.css.map": "/static/css/main.444ebf92.css.map",
-    "main.83a14369.js.map": "/static/js/main.83a14369.js.map"
+    "main.8868d30c.css.map": "/static/css/main.8868d30c.css.map",
+    "main.0eb8e9e6.js.map": "/static/js/main.0eb8e9e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.444ebf92.css",
-    "static/js/main.83a14369.js"
+    "static/css/main.8868d30c.css",
+    "static/js/main.0eb8e9e6.js"
   ]
 }

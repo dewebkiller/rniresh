@@ -1,5 +1,6 @@
+'use client';
+
 import React from "react";
-import { Helmet } from "react-helmet-async";
 import InnerHeaderStyle2 from "./InnerHeaderStyle2";
 import PortfolioSectionOne from "./PortfolioSectionOne";
 import BlogSection from "./BlogSection";
@@ -18,19 +19,6 @@ function Blog(props) {
   ];
   return (
     <>
-      <Helmet>
-        <title>
-          Blog | Freelance WordPress Developer Nepal | WordPress Developer | Niresh Shrestha
-        </title>
-        <meta
-          name="description"
-          content="Read the latest articles from Niresh Shrestha about WordPress, Web Development, and Frontend engineering."
-        />
-        <meta
-          name="keywords"
-          content="Blog, WordPress Developer, Frontend developer, Web Customization Services Kathmandu, Plugin Development"
-        />
-      </Helmet>
       <InnerHeaderStyle2
         Breadcrumbtext1={breadcrumbText}
         Breadcrumbtext2={breadcrumbText1}

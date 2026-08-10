@@ -1,8 +1,13 @@
+'use client';
+
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar, A11y } from "swiper";
 import nireshtestimonial from "../images/niresh-testimonials.png";
 import "swiper/css";
 import "swiper/css/navigation";
+
+const getSrc = (img) => typeof img === 'string' ? img : (img?.src || img);
 
 export const Testimonial = () => {
   return (
@@ -14,7 +19,7 @@ export const Testimonial = () => {
     <div className="text-center">
           <h2 className="title" data-aos="fade-down">Testimonials</h2>
           <h4 className="subtitle" data-aos="fade-down">Customers feedback</h4>
-          <img src={nireshtestimonial} alt="My Skills" className="h-full object-cover testimonial-image" data-aos="fade-left"/> 
+          <img src={getSrc(nireshtestimonial)} alt="My Skills" className="h-full object-cover testimonial-image" data-aos="fade-left"/> 
         </div>
     </div>
     <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 testimonialmainwrapper" data-aos="fade-left">
