@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React from "react";
 import Tooltip from "@mui/material/Tooltip";
@@ -23,7 +23,7 @@ import adobexdImport from "../images/adobe-xd.png";
 import figmaImport from "../images/figma.png";
 import illustratorImport from "../images/illustrator.png";
 
-const getSrc = (img) => typeof img === 'string' ? img : (img?.src || img);
+const getSrc = (img) => (typeof img === "string" ? img : img?.src || img);
 const html5 = getSrc(html5Import);
 const css3 = getSrc(css3Import);
 const bootstrap = getSrc(bootstrapImport);
@@ -171,9 +171,11 @@ function Progress() {
             data-aos-delay="500"
           >
             <p className="leading-7">
-              I develop simple, intuitive and responsive user interface that
-              helps users get things done with less effort and time with those
-              technologies.
+              As a WordPress and frontend developer, I create custom themes,
+              plugins, and WooCommerce solutions alongside modern, responsive
+              interfaces using React and Next.js, combining clean design with
+              strong performance to help your website convert better and rank
+              higher.
             </p>
             {/* <img src={progressimage} alt="My Skills" className="h-full object-cover" />  */}
             <ul className="skills__items my-20">

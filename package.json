@@ -38,8 +38,8 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && rm -rf build && cp -r out build",
+    "start": "npx serve build -p 3000"
   },
   "eslintConfig": {
     "extends": [

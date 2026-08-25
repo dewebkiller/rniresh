@@ -37,7 +37,7 @@ const Getintouch = () => {
         user_message: messageRef.current.value,
         recipient: "hello.niresh@gmail.com",
       });
-      alert("Email successfully sent! Please check your inbox.");
+      alert("Thank you! Your message has been sent successfully.");
     } catch (error) {
       console.error("Error sending email:", error);
     } finally {
@@ -100,6 +100,7 @@ const Getintouch = () => {
                             type="text"
                             placeholder="Full Name"
                             name="full_name"
+                            required
                             className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
                             ref={nameRef}
                           />
@@ -109,6 +110,7 @@ const Getintouch = () => {
                             type="email"
                             placeholder="Email"
                             name="user_email"
+                            required
                             className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
                             ref={emailRef}
                           />
@@ -120,6 +122,7 @@ const Getintouch = () => {
                             type="text"
                             placeholder="Subject"
                             name="user_subject"
+                            required
                             className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
                             ref={subjectRef}
                           />
@@ -131,6 +134,7 @@ const Getintouch = () => {
                             placeholder="Message"
                             name="user_message"
                             rows={8}
+                            required
                             className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
                             ref={messageRef}
                           />

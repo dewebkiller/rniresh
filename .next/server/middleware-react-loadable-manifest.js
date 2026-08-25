@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"Components/WorkProcess.js -> @lottiefiles/react-lottie-player\":{\"id\":\"Components/WorkProcess.js -> @lottiefiles/react-lottie-player\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_lottiefiles_react-lottie-player_dist_lottie-react_esm_js.js\"]}}"
+self.__REACT_LOADABLE_MANIFEST='{"Components/WorkProcess.js -> @lottiefiles/react-lottie-player":{"id":9762,"files":["static/chunks/8627a13e.7890927e821de83e.js"]}}';

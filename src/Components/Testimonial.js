@@ -23,41 +23,38 @@ export const Testimonial = () => {
         </div>
     </div>
     <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 testimonialmainwrapper" data-aos="fade-left">
-    <Swiper
+              <Swiper
                 className="testimonial-wrapper rounded-2xl"
                 modules={[Navigation, Scrollbar, A11y]}
                 spaceBetween={40}
                 slidesPerView={1}
                 navigation
                 scrollbar={{ draggable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log("slide change")}
               >
                 <SwiperSlide>
-                  Niresh is an awesome web designer! He is easy to work with and
-                  very detail oriented. He made my website look amazing and very
-                  user friendly for my clients! Highly appreciated his work.
+                  <p>
+                    "Niresh is an awesome web designer! He is easy to work with and
+                    very detail oriented. He made my website look amazing and very
+                    user friendly for my clients! Highly appreciated his work."
+                  </p>
                   <h5>Uttam K. Shrestha</h5>
                 </SwiperSlide>
                 <SwiperSlide>
-                  I have been connected with Niresh since very beginning. He
-                  gives best services ever even after the office hours in an
-                  efficient manner.
+                  <p>
+                    "I have been connected with Niresh since the very beginning. He
+                    gives the best services ever even after office hours in an
+                    efficient manner."
+                  </p>
                   <h5>Deepesh Mali</h5>
                 </SwiperSlide>
                 <SwiperSlide>
-                  I must say Niresh provides the excellent web designing
-                  services. This guy is so amazing he designed my website so
-                  well.
+                  <p>
+                    "I must say Niresh provides excellent web designing
+                    services. This guy is so amazing, he designed my website so
+                    well and delivered on time."
+                  </p>
                   <h5>Deevesh Thakur</h5>
                 </SwiperSlide>
-                <SwiperSlide>
-                  I must say Niresh provides the excellent web designing
-                  services. This guy is so amazing he designed my website so
-                  well.
-                  <h5>Deevesh Thakur</h5>
-                </SwiperSlide>
-                ...
               </Swiper>
     </div>
   </div>
