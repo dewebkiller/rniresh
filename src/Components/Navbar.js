@@ -8,6 +8,14 @@ function Navbar(props) {
   const dewebkiller = "https://dewebkiller.com";
   const [isNavOpen, setIsNavOpen] = useState(false);
   const pathname = usePathname();
+  // Strip trailing slash to match configured trailingSlash: true
+  const cleanPath = pathname ? (pathname.endsWith('/') && pathname !== '/' ? pathname.slice(0, -1) : pathname) : '';
+
+  const isHome = cleanPath === '' || cleanPath === '/';
+  const isAbout = cleanPath === '/about';
+  const isServices = cleanPath === '/services' || cleanPath.startsWith('/services/') || cleanPath === '/ai-video-production';
+  const isPortfolio = cleanPath === '/portfolio' || cleanPath.startsWith('/portfolio/');
+  const isContact = cleanPath === '/contact' || cleanPath === '/ContactUs';
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -70,22 +78,22 @@ function Navbar(props) {
             >
               <ul className="flex flex-col font-medium mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                 <li>
-                  <Link href={"/"} className={pathname === "/" ? "active" : ""}>
+                  <Link href={"/"} className={isHome ? "active" : ""}>
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/about"} className={pathname === "/about" ? "active" : ""}>
+                  <Link href={"/about"} className={isAbout ? "active" : ""}>
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/services"} className={pathname === "/services" ? "active" : ""}>
+                  <Link href={"/services"} className={isServices ? "active" : ""}>
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/portfolio"} className={pathname === "/portfolio" ? "active" : ""}>
+                  <Link href={"/portfolio"} className={isPortfolio ? "active" : ""}>
                     Portfolio
                   </Link>
                 </li>
@@ -96,7 +104,7 @@ function Navbar(props) {
                   </a>
                 </li>
                 <li>
-                  <Link href={"/contact"} className={pathname === "/contact" ? "active" : ""}>
+                  <Link href={"/contact"} className={isContact ? "active" : ""}>
                     Contact
                   </Link>
                 </li>
