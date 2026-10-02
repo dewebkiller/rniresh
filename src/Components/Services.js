@@ -1,10 +1,11 @@
-'use client';
+"use client";
 
 import React from "react";
 import nireshProfile from "../images/niresh-shrestha-profile.png";
 import InnerHeaderStyle2 from "./InnerHeaderStyle2";
 import ServiceSectionOne from "./ServiceSectionOne";
 import ServiceList from "./ServiceList";
+import FeaturedAiVideoService from "./FeaturedAiVideoService";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
 
@@ -21,18 +22,19 @@ function Services(props) {
   ];
   return (
     <>
-        <InnerHeaderStyle2
-          Breadcrumbtext1={breadcrumbText}
-          Breadcrumbtext2={breadcrumbText1}
-          Typewriter={typewriterStrings}
-          pagetitle={pagetitle}
-          Word1={word1}
-          Word2={word2}
-        />
-        <ServiceSectionOne />
-        <ServiceList />
-        <FAQ />
-        <Footer />
+      <InnerHeaderStyle2
+        Breadcrumbtext1={breadcrumbText}
+        Breadcrumbtext2={breadcrumbText1}
+        Typewriter={typewriterStrings}
+        pagetitle={pagetitle}
+        Word1={word1}
+        Word2={word2}
+      />
+      <ServiceSectionOne />
+      <FeaturedAiVideoService />
+      <ServiceList />
+      <FAQ />
+      <Footer />
     </>
   );
 }

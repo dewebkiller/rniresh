@@ -1,11 +1,12 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/portfolio/page": "app/portfolio/page.js",
   "/blog/page": "app/blog/page.js",
   "/about/page": "app/about/page.js",
-  "/singlepage/page": "app/singlepage/page.js",
   "/ContactUs/page": "app/ContactUs/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/portfolio/page": "app/portfolio/page.js",
   "/services/page": "app/services/page.js",
+  "/singlepage/page": "app/singlepage/page.js",
+  "/ai-video-production/page": "app/ai-video-production/page.js",
   "/page": "app/page.js"
 }

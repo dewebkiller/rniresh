@@ -39,7 +39,7 @@ function ServiceList(props) {
   }, []);
   return (
     <>
-      <div className="container mx-auto pb-20">
+      <div className="container mx-auto pt-16 md:pt-20 pb-20">
         <div className="flex flex-wrap gap-4 justify-center mb-10">
           <div className="text-center">
             <h5
