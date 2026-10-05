@@ -1,4 +1,4 @@
-import Services from "../../Components/Services";
+import Services from "../../Components/services/Services";
 
 export const metadata = {
   title: "Niresh Shrestha | Frontend developer, WordPress Developer| Freelance WordPress Developer Nepal",

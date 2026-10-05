@@ -1,0 +1,243 @@
+'use client';
+
+import React from "react";
+import Link from "next/link";
+
+import clikman from "../../images/portfolio/clikman.png";
+import trekkingactivites from "../../images/portfolio/trekking-activities.png";
+import edunyx from "../../images/portfolio/edunyx.png";
+import uiubma from "../../images/portfolio/ubma.png";
+import techknowcon from "../../images/portfolio/techknowcon.png";
+import himalayandirt from "../../images/portfolio/himalayan-dirt.png";
+import curryhouse from "../../images/portfolio/curryhousenc.png";
+import aaspas from "../../images/portfolio/aaspas.png";
+import axisinfosys from "../../images/portfolio/axis.png";
+import gssadvisor from "../../images/portfolio/gss-advisor.png";
+import abcd from "../../images/portfolio/abcd.png";
+import art3d from "../../images/portfolio/3dart.png";
+
+const getSrc = (img) => typeof img === 'string' ? img : (img?.src || img);
+
+const imgs = [
+  {
+    author: "Trekking Activites",
+    tag: "Web development",
+    technology: "WordPress: Custom Theme",
+    link: "https://trekkingactivitiesnepal.com/",
+    src: trekkingactivites,
+  },
+  {
+    author: "Clikman Production",
+    tag: "Web development",
+    technology: "Single page",
+    link: "https://www.clikmanproduction.com/",
+    src: clikman,
+  },
+  {
+    author: "Edunyx",
+    tag: "Web development",
+    technology: "WordPress | LMS",
+    link: "https://edunyx.com/",
+    src: edunyx,
+  },
+  {
+    author: "United Black Mothers of America",
+    tag: "Web development",
+    technology: "WordPress: Elementor",
+    link: "https://unitedblackmothersofamerica.org/",
+    src: uiubma,
+  },
+  {
+    author: "Techknowcon",
+    tag: "Web development",
+    technology: "WordPress: Elementor",
+    link: "https://techknowcon.io/",
+    src: techknowcon,
+  },
+  {
+    author: "Himalayan Dirt",
+    tag: "Web development",
+    technology: "WordPress: Custom Theme",
+    link: "https://himalayandirt.com/",
+    src: himalayandirt,
+  },
+  {
+    author: "Curry Housenc",
+    tag: "Web design",
+    technology: "WordPress: Custom theme",
+    link: "https://www.curryhousenc.com/",
+    src: curryhouse,
+  },
+  {
+    author: "AASPAS",
+    tag: "Web design",
+    technology: "WordPress: Custom Theme",
+    link: "https://aaspas.com.au/",
+    src: aaspas,
+  },
+  {
+    author: "Axis Infosys",
+    tag: "Web development",
+    technology: "WordPress: Custom Theme",
+    link: "#",
+    src: axisinfosys,
+  },
+  {
+    author: "GSS Advosor",
+    tag: "Web development",
+    technology: "WordPress: Custom Theme",
+    link: "https://gssadvisors.com/",
+    src: gssadvisor,
+  },
+  {
+    author: "ABCD Group",
+    tag: "WordPress: Custom Theme",
+    technology: "Ui/UX",
+    link: "#",
+    src: abcd,
+  },
+  {
+    author: "3D Art Museum",
+    tag: "WordPress: Custom Theme",
+    technology: "Ui/UX",
+    link: "#",
+    src: art3d,
+  },
+];
+
+const filters = [
+  { name: "Web design", status: false },
+  { name: "Web development", status: false },
+];
+
+const Filters = ({ onClickAll, all, onClick, filters }) => (
+  <form>
+    <ul>
+      <li onClick={onClickAll}>
+        <input type="checkbox" checked={all} readOnly />
+        <label htmlFor="all">All</label>
+      </li>
+      {filters.map((filter, i) => (
+        <li key={i} data-index={i} onClick={onClick}>
+          <input id={filter.name} type="checkbox" checked={filter.status} readOnly />
+          <label htmlFor={filter.name}>{filter.name}</label>
+        </li>
+      ))}
+    </ul>
+  </form>
+);
+
+const Cards = ({ imgs }) => (
+  <ul>
+    {imgs.map((img, i) => (
+      <li key={i}>
+        <figure>
+          <img src={getSrc(img.src)} alt={img.author} />
+          <figcaption>
+            <div>{img.author} </div>
+            <span>{img.technology}</span>
+            <a href={img.link} className="btn-capsule" target="_blank" rel="noreferrer">
+              Visit Site →{" "}
+            </a>
+          </figcaption>
+        </figure>
+      </li>
+    ))}
+  </ul>
+);
+
+class PortfolioListInner extends React.Component {
+  state = {
+    imgs,
+    filters,
+    all: true,
+  };
+
+  setFilter = (e) => {
+    e.preventDefault();
+    const { filters, all } = this.state;
+    const { index } = e.currentTarget.dataset;
+
+    filters[index].status = !filters[index].status;
+    this.setState({
+      filters,
+    });
+
+    this.updateFilters();
+    this.updateImgs();
+  };
+
+  setAll = () => {
+    const { filters } = this.state;
+
+    filters.forEach((filter) => {
+      filter.status = false;
+    });
+
+    this.setState({
+      all: true,
+      filters,
+    });
+  };
+
+  updateFilters() {
+    const allFiltersTrue = filters.every((filter) => filter.status === true);
+    const allFiltersFalse = filters.every((filter) => filter.status === false);
+
+    if (allFiltersTrue || allFiltersFalse) {
+      this.setAll();
+    } else {
+      this.setState({
+        all: false,
+      });
+    }
+  }
+
+  updateImgs() {
+    const { filters, all } = this.state;
+    let newImgs = [];
+    let a = 0;
+
+    imgs.forEach((img, imgKey) => {
+      filters.forEach((filter, filterKey) => {
+        if (img.tag == filter.name && filter.status == true) {
+          newImgs[a] = img;
+          a++;
+        }
+      });
+    });
+
+    this.setState({
+      imgs: newImgs,
+    });
+  }
+
+  render() {
+    const { filters, all } = this.state;
+    return (
+      <div className="dwk-portfolio px-5 pt-20 pb-20">
+        <div className="flex flex-wrap gap-4 justify-center mb-10">
+          <div className="text-center">
+            <h5
+              className="btn-capsule aos-init aos-animate mb-5"
+              data-aos="fade-down"
+            >
+              Portfolio
+            </h5>
+            <h4 className="subtitle aos-init aos-animate" data-aos="fade-down">
+              Awesome Projects
+            </h4>
+          </div>
+        </div>
+        <Filters
+          onClickAll={this.setAll}
+          all={all}
+          onClick={this.setFilter}
+          filters={filters}
+        />
+        {all ? <Cards imgs={imgs} /> : <Cards imgs={this.state.imgs} />}
+      </div>
+    );
+  }
+}
+export default PortfolioListInner;

@@ -1,13 +1,13 @@
-import Header from "../Components/Header";
-import Skills from "../Components/Skills";
-import Progress from "../Components/Progress";
-import PortfolioList from "../Components/PortfolioList";
-import Testimonial from "../Components/Testimonial";
-import Hireme from "../Components/Hireme";
-import BlogSection from "../Components/BlogSection";
-import Getintouch from "../Components/Getintouch";
-import FooterSocial from "../Components/FooterSocial";
-import Footer from "../Components/Footer";
+import Header from "../Components/layout/Header";
+import Skills from "../Components/home/Skills";
+import Progress from "../Components/home/Progress";
+import PortfolioList from "../Components/portfolio/PortfolioList";
+import Testimonial from "../Components/home/Testimonial";
+import Hireme from "../Components/home/Hireme";
+import BlogSection from "../Components/blog/BlogSection";
+import Getintouch from "../Components/contact/Getintouch";
+import FooterSocial from "../Components/layout/FooterSocial";
+import Footer from "../Components/layout/Footer";
 
 export const metadata = {
   title: 'Freelance WordPress Developer Nepal | WordPress Developer | Niresh Shrestha',

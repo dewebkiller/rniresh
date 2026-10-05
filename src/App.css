@@ -260,10 +260,15 @@ h4,
   line-height: 1.625 !important;
 }
 h5,
-.heading5 {
+.heading5,
+h2.heading5,
+.subtitle.heading5,
+h2.subtitle.heading5,
+.heading5.subtitle,
+h2.heading5.subtitle {
   font-family: "Paprika", cursive;
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 1.5rem !important;
+  line-height: 1.5 !important;
 }
 /* Progress Bar */
 .dwk-progressbar {
@@ -1443,6 +1448,16 @@ h6 {
   }
   h4 {
     font-size: 1.4rem;
+  }
+  h5,
+  .heading5,
+  h2.heading5,
+  .subtitle.heading5,
+  h2.subtitle.heading5,
+  .heading5.subtitle,
+  h2.heading5.subtitle {
+    font-size: 1.25rem !important;
+    line-height: 1.4 !important;
   }
   h1.rotate-90,
   .style2-centerimage img {

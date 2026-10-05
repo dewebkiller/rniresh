@@ -1,4 +1,4 @@
-import SinglePage from "../../Components/SingePage";
+import SinglePage from "../../Components/blog/SingePage";
 
 export const metadata = {
   title: "Top 10 AI Tools You Need to Know in 2024 | Niresh Shrestha",

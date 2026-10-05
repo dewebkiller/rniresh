@@ -1,4 +1,4 @@
-import AiVideoProduction from "../../Components/AiVideoProduction";
+import AiVideoProduction from "../../Components/ai-video/AiVideoProduction";
 
 export const metadata = {
   title: "AI Video Production | Niresh Shrestha",

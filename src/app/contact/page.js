@@ -1,4 +1,4 @@
-import Contact from "../../Components/Contact";
+import Contact from "../../Components/contact/Contact";
 
 export const metadata = {
   title: "Freelance WordPress Developer Nepal | Frontend developer | Services Provided by Niresh Shrestha",

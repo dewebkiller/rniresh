@@ -1,4 +1,4 @@
-import About from "../../Components/About";
+import About from "../../Components/about/About";
 
 export const metadata = {
   title: "Freelance WordPress Developer Nepal | About Niresh Shrestha",

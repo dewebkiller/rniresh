@@ -1,4 +1,4 @@
-import Portfolio from "../../Components/Portfolio";
+import Portfolio from "../../Components/portfolio/Portfolio";
 
 export const metadata = {
   title: "Freelance WordPress Developer Nepal | Frontend developer | WordPress Developer | Awesome Projects by Niresh Shrestha",

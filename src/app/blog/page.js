@@ -1,4 +1,4 @@
-import Blog from "../../Components/Blog";
+import Blog from "../../Components/blog/Blog";
 
 export const metadata = {
   title: "Blog | Freelance WordPress Developer Nepal | WordPress Developer | Niresh Shrestha",

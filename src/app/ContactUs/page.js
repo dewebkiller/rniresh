@@ -1,4 +1,4 @@
-import ContactUs from "../../Components/contactform";
+import ContactUs from "../../Components/contact/contactform";
 
 export const metadata = {
   title: "Contact Us | Freelance WordPress Developer Nepal | WordPress Developer | Niresh Shrestha",
