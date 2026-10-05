@@ -13,7 +13,7 @@ function BlogSection(props) {
         setLoading(true);
         // Using direct non-www domain to eliminate 301 redirect delays
         const response = await fetch(
-          "https://dewebkiller.com/wp-json/wp/v2/posts?_embed&per_page=6",
+          "https://dewebkiller.com/wp-json/wp/v2/posts?_embed&per_page=6&orderby=modified&order=desc",
         );
 
         if (!response.ok) {
@@ -101,7 +101,7 @@ function BlogSection(props) {
                       <ul className="flex flex-wrap justify-between text-sm mb-3">
                         <li className="dark:text-gray-400 font-medium">Niresh Shrestha</li>
                         <li className="dark:text-gray-400">
-                          {formatDate(post.date)}
+                          {formatDate(post.modified || post.date)}
                         </li>
                       </ul>
                       <a href={post.link} target="_blank" rel="noreferrer">
