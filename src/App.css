@@ -370,9 +370,12 @@ h2.heading5.subtitle {
   margin: 0 0.5rem 1rem;
   cursor: help;
 }
-.skills__item__img {
+.skills__item__img,
+.skills__item__icon img {
   display: block;
   width: 3rem;
+  height: 3rem;
+  object-fit: contain;
   margin: auto;
 }
 @media (min-width: 768px) {

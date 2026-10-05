@@ -23,6 +23,15 @@ import adobexdImport from "../../images/adobe-xd.png";
 import figmaImport from "../../images/figma.png";
 import illustratorImport from "../../images/illustrator.png";
 
+import capcutImport from "../../images/tools/capcut.png";
+import chatgptImport from "../../images/tools/chatgpt.png";
+import claudeImport from "../../images/tools/claude.png";
+import davinciImport from "../../images/tools/davinci.png";
+import geminiImport from "../../images/tools/gemini.png";
+import flowImport from "../../images/tools/flow.png";
+import grokImport from "../../images/tools/grok.png";
+import veImport from "../../images/tools/ve.png";
+
 const getSrc = (img) => (typeof img === "string" ? img : img?.src || img);
 const html5 = getSrc(html5Import);
 const css3 = getSrc(css3Import);
@@ -44,6 +53,14 @@ const photoshop = getSrc(photoshopImport);
 const adobexd = getSrc(adobexdImport);
 const figma = getSrc(figmaImport);
 const illustrator = getSrc(illustratorImport);
+const capcut = getSrc(capcutImport);
+const chatgpt = getSrc(chatgptImport);
+const claude = getSrc(claudeImport);
+const davinci = getSrc(davinciImport);
+const gemini = getSrc(geminiImport);
+const flow = getSrc(flowImport);
+const grok = getSrc(grokImport);
+const ve = getSrc(veImport);
 
 function Progress() {
   return (
@@ -160,7 +177,33 @@ function Progress() {
                   Graphic Design
                 </p>
                 <em className="ml-10 text-gray-600 text-xs">
-                  Logo, Branding, Email marketing templates
+                  Logo, Branding, Email templates
+                </em>
+              </div>
+            </div>
+
+            <div
+              className="flex items-center flex-wrap max-w-md px-10 bg-white shadow-3xl rounded-2xl h-20 my-20"
+              data-aos="fade-right"
+              data-aos-delay="1100"
+            >
+              <div className="flex items-center justify-center -m-6 overflow-hidden bg-white rounded-full">
+                <div className="dwk-progressbar">
+                  <div
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style={{ "--value": "90" }}
+                  ></div>
+                </div>
+              </div>
+              <div className="progress-content">
+                <p className="ml-10 font-medium text-gray-600 sm:text-xl">
+                  AI Video Production
+                </p>
+                <em className="ml-10 text-gray-600 text-xs">
+                  Commercials, Reels, Viral Shorts
                 </em>
               </div>
             </div>
@@ -397,6 +440,94 @@ function Progress() {
                 <Tooltip title="adobexd" arrow placement="top">
                   <div className="skills__item__icon">
                     <img src={adobexd} alt="adobexd" />
+                  </div>
+                </Tooltip>
+              </li>
+              <li
+                className="skills__item has-tooltip"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <Tooltip title="CapCut" arrow placement="top">
+                  <div className="skills__item__icon">
+                    <img src={capcut} alt="CapCut" />
+                  </div>
+                </Tooltip>
+              </li>
+              <li
+                className="skills__item has-tooltip"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <Tooltip title="DaVinci Resolve" arrow placement="top">
+                  <div className="skills__item__icon">
+                    <img src={davinci} alt="DaVinci Resolve" />
+                  </div>
+                </Tooltip>
+              </li>
+              <li
+                className="skills__item has-tooltip"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <Tooltip title="VEED.IO" arrow placement="top">
+                  <div className="skills__item__icon">
+                    <img src={ve} alt="VEED.IO" />
+                  </div>
+                </Tooltip>
+              </li>
+              <li
+                className="skills__item has-tooltip"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <Tooltip title="ChatGPT" arrow placement="top">
+                  <div className="skills__item__icon">
+                    <img src={chatgpt} alt="ChatGPT" />
+                  </div>
+                </Tooltip>
+              </li>
+              <li
+                className="skills__item has-tooltip"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <Tooltip title="Claude" arrow placement="top">
+                  <div className="skills__item__icon">
+                    <img src={claude} alt="Claude" />
+                  </div>
+                </Tooltip>
+              </li>
+              <li
+                className="skills__item has-tooltip"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <Tooltip title="Gemini" arrow placement="top">
+                  <div className="skills__item__icon">
+                    <img src={gemini} alt="Gemini" />
+                  </div>
+                </Tooltip>
+              </li>
+              <li
+                className="skills__item has-tooltip"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <Tooltip title="Grok" arrow placement="top">
+                  <div className="skills__item__icon">
+                    <img src={grok} alt="Grok" />
+                  </div>
+                </Tooltip>
+              </li>
+              <li
+                className="skills__item has-tooltip"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <Tooltip title="Flow" arrow placement="top">
+                  <div className="skills__item__icon">
+                    <img src={flow} alt="Flow" />
                   </div>
                 </Tooltip>
               </li>
